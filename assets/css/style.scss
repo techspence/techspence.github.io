@@ -2,3 +2,34 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.centermotto {
+	display: flex;
+	justify-content: center;
+}
+
+.bio {
+	font-family: Consolas,monaco,monospace;
+}
+
+.motto {
+	font-family: Consolas,monaco,monospace;
+	font-size: 12px;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.github {
+	padding: 5px;
+}
+
