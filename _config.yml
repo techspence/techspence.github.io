@@ -16,4 +16,4 @@ github_logo: /assets/img/github.png
 repository: https://github.com/techspence/techspence.github.io
 theme: jekyll-theme-minimal
 
-permalink: "/:title"
+permalink: /:categories/:title.html
