@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My 5 Step Infosec Learning Methodology
+permalink: "/:title"
 ---
 
 #Learning (Noun)
