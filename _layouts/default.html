@@ -11,9 +11,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
+  <div class="leftsidebar">
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
@@ -36,18 +34,18 @@
 				{% endif %}
 			</div>
 		</div>
-
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-      </header>
+  </div>
+  <body>
+    <div class="wrapper">
+      
       <section>
 
-      {{ content }}
+      <!--{{ content }}-->
+		<h1>Recent Posts</h1>
+		{% for post in site.posts %}
+		<a href="{{ post.url }}">{{ post.title }}</a>
+			{{ post.excerpt }}
+		{% endfor %}
 
       </section>
       <footer>
