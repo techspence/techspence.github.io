@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2019-01-29-Website-ToDo
-permalink: /websitetodo
+permalink: /websitetodo.html
 tags: [ToDo]
 modified: 1 January 2019
 ---
