@@ -6,12 +6,6 @@ tags: [infosec, cybersecurity, education, training]
 modified: 29 January 2019
 ---
 
-layout: post
-title: 2019-01-29-Website-ToDo
-permalink: /websitetodo.html
-tags: [ToDo]
-modified: 1 January 2019
-
 #Learning (Noun)
 The acquisition of knowledge or skills through experience, study, or by being taught.
 
