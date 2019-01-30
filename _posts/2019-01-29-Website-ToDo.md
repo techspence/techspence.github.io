@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2019-01-29-Website-ToDo
+title: Website ToDo List
 permalink: /websitetodo.html
 tags: [ToDo]
 modified: 29 January 2019

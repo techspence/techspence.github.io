@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2018-06-13-Themes-Thoughts-from-the-2018-NYS-Cybersecurity-Conference
+title: Themes Thoughts from the 2018 NYS Cybersecurity Conference
 permalink: /2018NYSCyberCon.html
 tags: [cybersecurity, conference, thoughts & opinions]
 modified: 29 January 2019

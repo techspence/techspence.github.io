@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2018-05-31-My-5-Step-Infosec-Learning-Methodology
+title: My 5 Step Infosec Learning Methodology
 permalink: /MyLearningMethodology.html
 tags: [infosec, cybersecurity, education, training]
 modified: 29 January 2019
