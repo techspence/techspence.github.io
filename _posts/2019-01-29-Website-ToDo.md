@@ -12,3 +12,4 @@ modified: 29 January 2019
 5. lightly bold 'Published' and 'Updated'
 6. Troubleshoot time-to-read plugin not working when published to github
 7. style and check compatability on mobile
+8. maybe make content column wider?
