@@ -10,3 +10,4 @@ modified: 1 January 2019
 3. align date/time to read under title better
 4. add font-awesome clock next to time to read
 5. lightly bold 'Published' and 'Updated'
+6. Troubleshoot time-to-read plugin not working when published to github
