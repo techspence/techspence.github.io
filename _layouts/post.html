@@ -37,10 +37,11 @@
       </header>
       <section>
 		<h1 class="posttitle">{{ page.title }}</h1>
-		<p class="postmeta"><small>Published: {{ page.date | date: "%-d %B %Y" }} | Updated: {{ page.modified }} | <!--| {{ post.content | reading_time }}--></small></p>
+		<p class="postmeta"><small>{{ page.content | reading_time }} | Last Updated: {{ page.modified }}</small></p>
 
 		{{content}}
-
+		
+		<p class="postmeta"><small>This post was originally published on: {{ page.date | date: "%-d %B %Y" }}</small></p>
       </section>
       <footer>
       </footer>
