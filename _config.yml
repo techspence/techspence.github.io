@@ -15,7 +15,3 @@ github_logo: /assets/img/github.png
 
 repository: https://github.com/techspence/techspence.github.io
 theme: jekyll-theme-minimal
-
-reading_time:
-  second_plural: "second read"    # default: seconds
-  minute_plural: "minute read"    # default: minutes

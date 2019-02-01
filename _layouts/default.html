@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
+    <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,7 +39,7 @@
       <section>
 		{% for post in site.posts %}
 		<h1 class="posttitle"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		<p class="postmeta"><small><!--{{ post.content | reading_time }} | -->Last Updated: {{ post.modified }}</small></p>
+		<p class="postmeta"><small><i class="far fa-clock"></i> {% include read_time.html content=post.content %} | Last Updated: {{ post.modified }}</small></p>
 		{{ post.excerpt }}
 		{% endfor %}
 
