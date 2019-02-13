@@ -47,3 +47,19 @@
  margin-top: -23px; 
 }
 
+section {
+  width: 900px;
+  float: right;
+  margin-right: -200px;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+header {
+  width: 270px;
+  float: left;
+  left: 400px;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
