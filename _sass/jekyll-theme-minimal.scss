@@ -105,10 +105,11 @@ img {
 }
 
 header {
-  width:270px;
-  float:left;
-  position:fixed;
-  -webkit-font-smoothing:subpixel-antialiased;
+  width: 270px;
+  float: left;
+  left: 400px;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased; }
 }
 
 ul.downloads {
@@ -172,11 +173,11 @@ strong {
 }
 
 section {
-  width:600px;
-  float:right;
-  margin-right: -40px;
-  padding-bottom:50px;
-  font-size: 18px;
+  width: 900px;
+  float: right;
+  margin-right: -200px;
+  padding-bottom: 50px;
+  font-size: 18px; }
 }
 
 small {
