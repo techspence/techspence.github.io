@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "SpencerAlessi.com"
+title                    : "spenceralessi.com"
 title_separator          : "-"
 name                     : "Spencer Alessi"
 description              : "Family 1st! After that I’m an Information Security practitioner! Lover of video games & winter. Live now, be yourself, remember death.."
@@ -24,7 +24,7 @@ url                      : "https://techspence.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "techspence/techspence.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/img/logo.png"
+logo                     : # "/assets/img/logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Spencer Alessi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/logo.png"
   bio              : "💙 Family 1st! After that I’m an Information Security practitioner! Lover of video games & winter. Live now, be yourself, remember death.. 🎮❄️👨🏼‍💻💻"
   #location         : "Somewhere"
   #email            : 
