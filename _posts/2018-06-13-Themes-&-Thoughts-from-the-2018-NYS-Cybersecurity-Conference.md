@@ -1,8 +1,9 @@
 ---
-layout: posts
+layout: single
+classes: wide
 title: Themes Thoughts from the 2018 NYS Cybersecurity Conference
 permalink: /2018NYSCyberCon
-modified: 29 January 2019
+date: 2019-01-29
 ---
 
 ### Why go to a conference?

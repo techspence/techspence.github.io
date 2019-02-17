@@ -1,8 +1,9 @@
 ---
-layout: posts
+layout: single
+classes: wide
 title: My 5 Step Infosec Learning Methodology
 permalink: /MyLearningMethodology
-modified: 29 January 2019
+date: January 2019-01-29
 ---
 
 ***Learning (Noun):*** _The acquisition of knowledge or skills through experience, study, or by being taught._
