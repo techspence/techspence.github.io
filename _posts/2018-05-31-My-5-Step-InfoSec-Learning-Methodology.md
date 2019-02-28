@@ -7,7 +7,6 @@ date: January 2019-01-29
 ---
 
 ***Learning (Noun):*** _The acquisition of knowledge or skills through experience, study, or by being taught._
-
 There are many ways to learn and everyone has a different style that works best for them. When reading my thoughts below take into consideration that I much more prefer audio/video than reading. To me this is because when it comes to audio I can listen passively while I do something else, like mow the lawn or work out. So when you’re mapping out your approach, take a look at your lifestyle and the time you have throughout the day to consume information. If you have time to sit down and read and you enjoy that, great do it. If not, maybe try audiobooks or podcasts.
 
 Ok, so the most important thing to me, my number one goal, when i’m learning something new is immersion. I know myself and I know that when I just read a blog post here and maybe watch a video on youtube there, i’m not allowing the content to really soak into my brain. I need repetition and constant interaction with whatever i’m learning. So, I try and do all the things i’m going to list below on a regular basis. I make it a habit, a practice to participate in these 5 “methodologies” very regularly.
