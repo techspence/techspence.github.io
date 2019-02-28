@@ -109,8 +109,8 @@ author:
   name             : "Spencer Alessi"
   avatar           : "/assets/img/logo.png"
   bio              : "💙 Family 1st! Information Security practitioner. Love video games, winter, waffles & outdoor photography. Live now, be yourself, remember death 👨🏼‍💻🎮❄️🏔📷"
-  #location         : "Somewhere"
-  #email            : 
+  location         : "Bob Ross Moutain Range"
+  #email            : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -136,13 +136,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/techspence"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/techspence"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -151,7 +151,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/techspence"
 
 
 # Reading Files
