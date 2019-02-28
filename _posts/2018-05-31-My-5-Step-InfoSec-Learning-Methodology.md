@@ -2,7 +2,6 @@
 layout: single
 classes: wide
 title: My 5 Step Infosec Learning Methodology
-permalink: /MyLearningMethodology
 date: January 2019-01-29
 ---
 Learning (Noun): The acquisition of knowledge or skills through experience, study, or by being taught. There are many ways to learn and everyone has a different style that works best for them. When reading my thoughts below take into consideration that I much more prefer audio/video than reading. To me this is because when it comes to audio I can listen passively while I do something else, like mow the lawn or work out. So when you’re mapping out your approach, take a look at your lifestyle and the time you have throughout the day to consume information. If you have time to sit down and read and you enjoy that, great do it. If not, maybe try audiobooks or podcasts.
