@@ -12,3 +12,13 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
+_data
+_saas
+.travis.yml
+Gemfile
+LICENSE
+Rakefile
+banner.js
+package-lock.json
+package.json
+staticman.yml
