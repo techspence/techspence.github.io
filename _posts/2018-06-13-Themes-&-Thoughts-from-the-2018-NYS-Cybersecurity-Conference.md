@@ -5,7 +5,6 @@ title: Themes Thoughts from the 2018 NYS Cybersecurity Conference
 permalink: /2018NYSCyberCon
 date: 2019-01-29
 ---
-### Why go to a conference?
 I had the opportunity to attend the 2018 NYS Cybersecurity Conference held in Albany NY. The conference is held every year in June and this year marked 21 years of the conference. I’ve attended this conference twice now, the first time last year (2017), and I always get a lot of value from this trip. This time I had the chance to also take a full day of training on the topic of DevSecOps (which was super awesome BTW) which I will share more about below. First, I always try to go into these conferences with an open mind and really try and come away with a few things in particular: major themes (high level thinking) and practical (more hands-on/tactical) things I can begin implementing immediately.
 
 I think the reason I like doing this is because I like seeing the big picture. I like taking a step back and looking at the security industry from a high level to try and pick up on common themes and trends happening. I think this helps me stay ahead of the game and allows me to begin thinking about how I can put myself in the best position to succeed both for my company and for my career.
