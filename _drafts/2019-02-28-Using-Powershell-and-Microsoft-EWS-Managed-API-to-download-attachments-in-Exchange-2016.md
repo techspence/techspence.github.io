@@ -44,7 +44,7 @@ This function loops through the processed folders path until target folder is fo
 
 Fun little side-note, the root of your mailbox is called the _Top Information Store_ and is sometimes displayed like this `\\email@company.com`.
 
-Note, that my script assumes that the _processed folder_ is a subfolder of the root of the users mailbox (e.g. \\email@company.com\ProcessedFolder)
+Note, that my script assumes that the _processed folder_ is a subfolder of the root of the users mailbox (e.g. `\\email@company.com\ProcessedFolder`)
 
 Fun little fact I found out was that, if you change the _processed folder_ to be underneath any other folder, including the Inbox, the script requires slight modification.
 
@@ -66,6 +66,7 @@ $tftargetidroot = New-Object Microsoft.Exchange.WebServices.Data.FolderId([Micro
 ```
 
 **`Function FindTargetEmail`**
+
 This is the main driver function that controls most of the scripts actions. Essentially this function loops through the emails that have been found using our filters, which I will explain in a minute, then it:
 1. Determines the download location based on the attachment name
 2. Saves the attachment to the download location, then closes it
@@ -73,10 +74,15 @@ This is the main driver function that controls most of the scripts actions. Esse
 
 As you can see there are some splitting of attachment names and some hackery to make sure I move the files to the correct monthly folder. This is just my own OCD, it's not really necessary. :)
 
-**Using the Exchange EWS API**
+## Using the Exchange EWS API
+
 Now that i've explained what the functions do, we can move on to explaining the Exchange EWS API. To learn more about it, see [Download the Microsoft Exchange Web Services Managed API 2.2 from](http://www.microsoft.com/en-us/download/details.aspx?id=42951).
 
+**Download and Install the EWS Managed API**
+
 Once you have downloaded and installed the Exchange EWS API components you need to load the EWS dll into a variable, then load it so you can begin working with it. You can see more commands and functions related to the EWS API here [Microsoft EWS Managed API Reference](http://msdn.microsoft.com/en-us/library/jj220535(v=exchg.80).aspx).
+
+**Create an EWS Service Object**
 
 Now you need to create an EWS Service Object for the target mailbox. There are many ways you can authentication to the EWS API. For my script I chose to just use my organizations Autodiscover URL, which allows me to authenticate using the user who is running the script.
 
@@ -86,9 +92,15 @@ $exchangeservice.AutodiscoverUrl($mailbox)
 ```
 This also makes it convenient for me when I create a scheduled task out of this script. I can permission a service account accordingly without having to worry about hard coding credentials in my script. Hard coded creds should be avoided at all costs.
 
+**Bind to the Inbox**
+
 Now you need to simply Bind to the users Inbox. There are again a few ways to do this. I chose to use the WellKnownFolderName function.
 
+**Configure Search Filter**
+
 One of the last things to do is to create some search filters for the emails we are targeting. For this I chose to use create filters that checks for: unread messages, with a subject containing "Patch Report", that have attachments. Once you create those variables you add them all up into a collection and use that to find all the emails you're targeting.
+
+**"View" the Results**
 
 I create a view filter so as to limit the query overhead. I chose to make this script view 10 items at a time. This was a tip I found from [Using PowerShell and EWS to monitor a mailbox](https://seanonit.wordpress.com/2014/10/29/using-powershell-and-ews-to-monitor-a-mailbox/).
 
