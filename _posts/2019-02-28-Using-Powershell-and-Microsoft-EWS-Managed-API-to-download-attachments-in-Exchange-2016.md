@@ -80,7 +80,14 @@ Now that i've explained what the functions do, we can move on to explaining the 
 
 **Download and Install the EWS Managed API**
 
-Once you have downloaded and installed the Exchange EWS API components you need to load the EWS dll into a variable, then load it so you can begin working with it. You can see more commands and functions related to the EWS API here [Microsoft EWS Managed API Reference](http://msdn.microsoft.com/en-us/library/jj220535(v=exchg.80).aspx).
+Once you download and install the Exchange EWS API components you need to load the appropriate EWS dll for the API namespace you want to use. By loading the `Microsoft.Exchange.WebServices.Data` namespace we have access to a majority of the EWS classes and methods. Here is how you load the EWS dll.
+
+```Powershell
+$dllpath = "C:\Program Files\Microsoft\Exchange\Web Services\2.2\Microsoft.Exchange.WebServices.dll"
+[void][Reflection.Assembly]::LoadFile($dllpath)
+```
+
+Once you load the Webservices dll you can begin working with it. To read more about the EWS API see: [Microsoft EWS Managed API Reference](http://msdn.microsoft.com/en-us/library/jj220535(v=exchg.80).aspx). Also note, there are multiple namespaces, for example, for things such as Autodiscover and Authentication, I suggest reviewing them if you want to learn more or mess around with other functionality.
 
 **Create an EWS Service Object**
 
@@ -94,16 +101,40 @@ This also makes it convenient for me when I create a scheduled task out of this 
 
 **Bind to the Inbox**
 
-Now you need to simply Bind to the users Inbox. There are again a few ways to do this. I chose to use the WellKnownFolderName function.
+Now you need to simply Bind to the users Inbox. There are again a few ways to do this. I chose to use the `WellKnownFolderName` enum. `WellKnownFolderName` defines common folder names that are used in a users mailbox.
+
+```Powershell
+$inboxfolderid = New-Object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::Inbox,$mailbox)
+$inboxfolder = [Microsoft.Exchange.WebServices.Data.Folder]::Bind($exchangeservice,$inboxfolderid)
+```
 
 **Configure Search Filter**
 
-One of the last things to do is to create some search filters for the emails we are targeting. For this I chose to use create filters that checks for: unread messages, with a subject containing "Patch Report", that have attachments. Once you create those variables you add them all up into a collection and use that to find all the emails you're targeting.
+One of the last things to do is to create some search filters for the emails we are targeting. This time we are going to use the `EmailMessageSchema` class combined with the `IsRead`, `Subject` and `HasAttachments` fields. The subject I am targeting can be seen in the user defined variables section. I am looking for emails that contain the subject "Path Report." The other filters should be pretty self explanatory.
+
+One cool thing to note is you can chain these filters together, throw an `And` at the end and create some logic out of it.
+
+Once you create those variables you add them all up into a collection and use that to find all the emails you're targeting.
+
+```Powershell
+$sfunread = New-Object Microsoft.Exchange.WebServices.Data.SearchFilter+IsEqualTo([Microsoft.Exchange.WebServices.Data.EmailMessageSchema]::IsRead, $false)
+$sfsubject = New-Object Microsoft.Exchange.WebServices.Data.SearchFilter+ContainsSubstring ([Microsoft.Exchange.WebServices.Data.EmailMessageSchema]::Subject, $subjectfilter)
+$sfattachment = New-Object Microsoft.Exchange.WebServices.Data.SearchFilter+IsEqualTo([Microsoft.Exchange.WebServices.Data.EmailMessageSchema]::HasAttachments, $true)
+$sfcollection = New-Object Microsoft.Exchange.WebServices.Data.SearchFilter+SearchFilterCollection([Microsoft.Exchange.WebServices.Data.LogicalOperator]::And);
+$sfcollection.add($sfunread)
+$sfcollection.add($sfsubject)
+$sfcollection.add($sfattachment)
+```
 
 **"View" the Results**
 
 I create a view filter so as to limit the query overhead. I chose to make this script view 10 items at a time. This was a tip I found from [Using PowerShell and EWS to monitor a mailbox](https://seanonit.wordpress.com/2014/10/29/using-powershell-and-ews-to-monitor-a-mailbox/).
 
+```Powershell
+$view = New-Object -TypeName Microsoft.Exchange.WebServices.Data.ItemView -ArgumentList 10
+$foundemails = $inboxfolder.FindItems($sfcollection,$view)
+```
+
 Then I just call `FindTargetFolder($processedfolderpath)` and `FindTargetEmail($subject)` and you're done.
 
-Now give it a little test and away you go. :)
+Now hit that command line, navigate to the folder where your script resides, and run it using `.\EWSEmailAttachmentSaver.ps1`. Make sure you always test your code in a development or test environment BEFORE moving to production. Test, test, test!
