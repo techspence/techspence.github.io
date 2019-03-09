@@ -28,15 +28,18 @@ This script requires:
 - Exchange 2007 or newer
 - Exchange Web Services (EWS) Managed API 2.2
 
+
 **User Defined Variables**
 
 At the top of the script, under the comment section you will see a handful of user defined variables. If you use this script, most of your changes will occur here. This is all pretty standard stuff.
 
 This script has several functions:
 
+
 **`Function LogWrite`**
 
 Using `!(Test-Path $logpath)` I first check to see if the path to the log file exists, if not I create it. If it does exist, I use the `Add-content` cmdlet to send information i've specified to the log file.
+
 
 **`Function FindTargetFolder`**
 
@@ -74,9 +77,11 @@ This is the main driver function that controls most of the scripts actions. Esse
 
 As you can see there are some splitting of attachment names and some hackery to make sure I move the files to the correct monthly folder. This is just my own OCD, it's not really necessary. :)
 
+
 ## Using the Exchange EWS API
 
 Now that i've explained what the functions do, we can move on to explaining the Exchange EWS API. To learn more about it, see [Download the Microsoft Exchange Web Services Managed API 2.2 from](http://www.microsoft.com/en-us/download/details.aspx?id=42951).
+
 
 **Download and Install the EWS Managed API**
 
@@ -89,6 +94,7 @@ $dllpath = "C:\Program Files\Microsoft\Exchange\Web Services\2.2\Microsoft.Excha
 
 Once you load the Webservices dll you can begin working with it. To read more about the EWS API see: [Microsoft EWS Managed API Reference](http://msdn.microsoft.com/en-us/library/jj220535(v=exchg.80).aspx). Also note, there are multiple namespaces, for example, for things such as Autodiscover and Authentication, I suggest reviewing them if you want to learn more or mess around with other functionality.
 
+
 **Create an EWS Service Object**
 
 Now you need to create an EWS Service Object for the target mailbox. There are many ways you can authentication to the EWS API. For my script I chose to just use my organizations Autodiscover URL, which allows me to authenticate using the user who is running the script.
@@ -99,6 +105,7 @@ $exchangeservice.AutodiscoverUrl($mailbox)
 ```
 This also makes it convenient for me when I create a scheduled task out of this script. I can permission a service account accordingly without having to worry about hard coding credentials in my script. Hard coded creds should be avoided at all costs.
 
+
 **Bind to the Inbox**
 
 Now you need to simply Bind to the users Inbox. There are again a few ways to do this. I chose to use the `WellKnownFolderName` enum. `WellKnownFolderName` defines common folder names that are used in a users mailbox.
@@ -107,6 +114,7 @@ Now you need to simply Bind to the users Inbox. There are again a few ways to do
 $inboxfolderid = New-Object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::Inbox,$mailbox)
 $inboxfolder = [Microsoft.Exchange.WebServices.Data.Folder]::Bind($exchangeservice,$inboxfolderid)
 ```
+
 
 **Configure Search Filter**
 
@@ -126,6 +134,7 @@ $sfcollection.add($sfsubject)
 $sfcollection.add($sfattachment)
 ```
 
+
 **"View" the Results**
 
 I create a view filter so as to limit the query overhead. I chose to make this script view 10 items at a time. This was a tip I found from [Using PowerShell and EWS to monitor a mailbox](https://seanonit.wordpress.com/2014/10/29/using-powershell-and-ews-to-monitor-a-mailbox/).
@@ -138,3 +147,5 @@ $foundemails = $inboxfolder.FindItems($sfcollection,$view)
 Then I just call `FindTargetFolder($processedfolderpath)` and `FindTargetEmail($subject)` and you're done.
 
 Now hit that command line, navigate to the folder where your script resides, and run it using `.\EWSEmailAttachmentSaver.ps1`. Make sure you always test your code in a development or test environment BEFORE moving to production. Test, test, test!
+
+***If anyone gets value from this, I would love to know what specifically. And if you have any comments, questions or feedback about anything I wrote above, I would love to continue the dialog on Twitter. Hit me up [@techspence](http://twitter.com/techspence)***
