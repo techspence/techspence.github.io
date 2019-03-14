@@ -49,5 +49,3 @@ character substitution
 ``` Regex
 @e(?!xample\.com).?x.?a.?m.?p.?l.?e\.com
 ```
-
-**should also setup a spoofing prevention rule so that emails with sender names such as jjccarrter@uticafirst.com are not allowed to be delivered.**
