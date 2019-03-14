@@ -1,11 +1,11 @@
 ---
 layout: single
 classes: wide
-title: "Quick and easy ways to prevent CEO Fraud emails"
+title: "Quick and easy ways to protect against CEO Fraud emails"
 date: 2019-03-14
 ---
 
-# Blog post on some easy ways to prevent CEO Fraud emails from ever making it to a users mailbox
+# Blog post on some easy ways to protect against CEO Fraud emails
 
 # Rules
 
