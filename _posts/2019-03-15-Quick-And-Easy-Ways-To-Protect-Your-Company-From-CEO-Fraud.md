@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "Quick And Easy Ways to Protect Your Company From CEO Fraud"
-date: 2019-03-14
+date: 2019-03-15
 ---
 In this blog post i'm going to share one quick and easy technique you can use to protect your company from 2 different types of CEO fraud. The technique I detail in this blog post is not the only way to detect these emails. It's just one of many ways. Also. please know that nothing in this blog post is new or ground breaking. I don't propose any new fancy techniques. There are times in security where detection and prevention just comes down to a few simple, yet tedious tasks. This is one of those situations. By using a little understanding of what attackers try to do with some regular expression knowledge you can mitigate a good chuck of CEO fraud emails. My hope is that you get some value from this or maybe it prompts you to think about your phishing detection a little bit differently.
     
@@ -18,6 +18,8 @@ Now, the first thing to tackle before jumping into this is to make sure you have
 The thing I want you to focus on here is the **domain**, everything after the @ symbol. In this blog post, my made up CEO's name is Jack Carter and the company email is eureka[.]com. 
 
 *If you're a syfy fan you will know that Jack Carter was the quirky and trouble prone Sheriff of a town called Eureka in the show with the same name. I love that show. It's about a town of geniuses that are always causing trouble, blowing stuff up or wreaking some other kind of havoc on the town.*
+
+What attackers are hoping is that your billing manager or HR rep doesn't pay attention to the sender's information, sees the name, which matches the CEO's name, glances over the look-a-like/misspelt domain name and continues onto the body of the email. Attackers are banking on your co-workers just being lazy. Encourage your users to stay vigilant and stay aware!
 
 Ok here's an example of what i'm talking about:
 
@@ -75,6 +77,8 @@ Once you have some regex figured out, now you can go to your email gateway or wh
 As the title of this section implies, there is another technique that I have seen attackers use. They will use your CEO's name or a variation of their name combined with a random domain name.
 
 The thing I want you to focus on here is the **sender name**, everything before the @ symbol. Again, in this blog post, my made up CEO's name is Jack Carter and the company email is eureka[.]com.
+
+**I will repeat myself here because it's so important..** Attackers are hoping is that your billing manager or HR rep doesn't pay attention to the sender's information, sees the name, which matches the CEO's name and continues onto the body of the email. Attackers are banking on your co-workers just being lazy. Encourage your users to stay vigilant and stay aware!
 
 Ok here's an example of what i'm talking about:
 
