@@ -112,4 +112,4 @@ Once you have some regex figured out, now you can go to your email gateway or wh
 
 ---
 
-***That’s all I have for now on this topic. This has been a little brain dump to get some ideas out on paper. I truly hope that someone, maybe 1 or 2 people find value in this. If you did get value from this or if my thoughts sparked an idea of your own or if you want to continue this conversation, hit me up on Twitter [@techspence](https://twitter.com/techspence), I would love to connect!***
+***That’s all I have for now on this topic. I truly hope that someone, maybe 1 or 2 people find value in this. If you did get value from this, please share it and if my thoughts sparked an idea of your own or if you want to continue this conversation, hit me up on Twitter [@techspence](https://twitter.com/techspence), I would love to connect!***
