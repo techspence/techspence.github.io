@@ -14,7 +14,6 @@ Now, the first thing to tackle before jumping into this is to make sure you have
 
 
 # CEO Fraud Technique 1: Look-a-Like/Misspelt Domain Names
-
 The thing I want you to focus on here is the **domain**, everything after the @ symbol. In this blog post, my made up CEO's name is Jack Carter and the company email is eureka[.]com. 
 
 *If you're a syfy fan you will know that Jack Carter was the quirky and trouble prone Sheriff of a town called Eureka in the show with the same name. I love that show. It's about a town of geniuses that are always causing trouble, blowing stuff up or wreaking some other kind of havoc on the town.*
@@ -63,13 +62,7 @@ Play with this regex: [https://regex101.com/r/tPVqPG/1/](https://regex101.com/r/
 Play with this regex: [https://regex101.com/r/nv7uIT/1](https://regex101.com/r/nv7uIT/1)
 
 
-**Look-a-Like/Misspelt Domain Name Summary**
-
-Once you have some regex figured out, now you can go to your email gateway or whatever you are using to filter email based on rules and create a rule that uses these regular expressions to detect and handle this emails. I would love to include examples of how to do this with different platforms, but at this point, I just don't have access to a variety of platforms.
-
-
 # CEO Fraud Technique 2: Using your CEO's Name with a Random Domain Name
-
 As the title of this section implies, there is another technique that I have seen attackers use. They will use your CEO's name or a variation of their name combined with a random domain name.
 
 The thing I want you to focus on here is the **sender name**, everything before the @ symbol. Again, in this blog post, my made up CEO's name is Jack Carter and the company email is eureka[.]com.
@@ -112,3 +105,11 @@ You can also combine these into one regex with the | character, wrapped with ()
 
 Play with this regex: [https://regex101.com/r/u1VvHb/1](https://regex101.com/r/u1VvHb/1)
 
+
+**Now create your email filtering rules**
+
+Once you have some regex figured out, now you can go to your email gateway or whatever you are using to filter email based on rules and create a rule that uses these regular expressions to detect and handle this emails. I would love to include examples of how to do this with different platforms, but at this point, I just don't have access to a variety of platforms.
+
+---
+
+***That’s all I have for now on this topic. This has been a little brain dump to get some ideas out on paper. I truly hope that someone, maybe 1 or 2 people find value in this. If you did get value from this or if my thoughts sparked an idea of your own or if you want to continue this conversation, hit me up on Twitter [@techspence](https://twitter.com/techspence), I would love to connect!***
