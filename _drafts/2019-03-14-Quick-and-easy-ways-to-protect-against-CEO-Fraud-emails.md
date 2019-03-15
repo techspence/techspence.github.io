@@ -1,51 +1,88 @@
 ---
 layout: single
 classes: wide
-title: "Quick and easy ways to protect against CEO Fraud emails"
+title: "Quick Easy No Cost Ways to Protect your CEO from Phishing"
 date: 2019-03-14
 ---
+**(Maybe change the title to: Quick And Easy Ways to Protect Your Company From Look-A-Like Phishing)**
 
-# Blog post on some easy ways to protect against CEO Fraud emails
+In this blog post i'm going to share my quick, easy no cost approach to protecting my CEO from phishing. Please know that nothing in this blog post is ground breaking. There are no new fancy techniques. But there is a lot of dedication, vigilance and care. Also know that although I am focusing in on the CEO in this blog post, the strategies I try to articulate absolutely apply to everyone else in your company. My hope is that you get some value from this or maybe it prompts you to think about your security awareness program a little bit differently.
 
-# Rules
+# How to Talk to your CEO about Phishing
 
-- BEC Fraud
-- Spoofing
-- Scareware
-- Sender Policy Framework
-- Suspect URLs (built into some email gateway products)
-- Cisco Umbrella (content filtering)
-- Remove sensitive header info?
-- Remove message stamps?
+Now you might be asking yeah but what does this have to do with my CEO? My point here is that you want to strive for open and honest communication with your CEO. The more open the line of communication is, the better. A few minutes ot check out an email is far better than a few million dollars lost due to a phishing email. 
 
-# Regex
+One way to break the ice and begin the conversation is to just ask your CEO if he/she has seen any weird or suspicious emails lately. Then take it from there based on their response. Depending on time allowed, and what level of tech savvy your CEO is, share one tip, your CEO can use to immediately improve their chances of detecting phishing emails. Such as hovering your mouse over hyperlinks in emails or viewing the email headers to inspect the sender address.
 
-**Name**
+Communication is a journey and a process, not a destination.
 
-Jack Carter
+Although it's fairly conventional for companies to have an email gateway, the surging popularity of cloud email platforms such as Office 365 and Gmail have caused companies to outsource their email gateways. This is a double edge sword. Less to manage, but also less control.
 
-**character substitution**
+If, however, your company does maintain and control your own email gateway or email filtering platform, then this section is for you. I want to share with you a couple email filtering rules that I think greatly help protect your CEO and your company from phishing and CEO fraud emails.
+    
+**Look-a-like Phishing**
+There might be a better name for this, but this is what I could come up with off the top of my head. This is a type of phishing email that is typically targeting your accounting or billing managers, CFO, HR or other executive. The attacker will use your CEO's name along with a look-a-like email address (because they know spoofing attacks get blocked by your filters because they have done their research) in order to trick your billing manager into wiring money or convince your HR manager into sending W2's. The emails that use this strategy usually have some kind of financial or employee tax record motive to them.
 
-``` Regex
-[jJ][aA][cC][kK]\s[cC][aA][rR][tT][eE][rR]
+The thing I want you to focus on here is the sender name and address. In this example, my CEO's name is Jack Carter, the company email is eureka.com. If you're a syfy fan you will know that Jack Carter was the quirky and trouble prone Sheriff of a town called Eureka in the show with the same name. I love that show. It's about a town of geniuses that are always causing trouble, blowing stuff up or wreaking some other kind of havoc on the town. 
 
-[jJ][aA][cC][kK]\s[aA-zZ]\s[cC][aA][rR][tT][eE][rR]
+Ok here's an example of what i'm talking about
 
-[jJ][aA][cC][kK]\s[aA-zZ][.]\s[cC][aA][rR][tT][eE][rR]
-```
+a) Jack carter <jcarter@eureka.com>
+b) Jack Carter <jcarter@euneka.com>
 
-**Email**
+Can you spot the difference between the two? Which one is the real Jack Carter? The answer is a.
 
-jcarter@example.com
+Before I share how I am going to detect these emails I first want to share a few more examples of look-a-like phishing so when you see how I detect these you will understand the why and the how.
 
-**Misspelt Regex**
+Jack C. Carter <jcarter@eurreka.com>
+Jack E Carter <jecarter@eurkaa.com>
+Jack Carter <jcarter@eur4a.com>
+Jack Carter <jcarter@eur3ka.com>
+
+Now as a trained eye you might pick up on this immediately. But imagine you're a billing manager and you're quickly going through your email. You might see how this could trick some people. Your spoofing rules are not going to detect these, because they are not spoofed. This technique is not new. Attackers are relying on look-a-like domains, sometimes referred to as misspelt domains, in order to trick you and your users.
+
+Now onto the detection.
+
+One way to detect these emails is to compare the sender name and address with that of your CEO's actual name and address. Now remember the real CEO information is:  Jack carter <jcarter@eureka.com>.
+
+Here's some regex that can be used to detect look-a-like or misspelt domain names that use letter or character substitutions.
 
 letter substitution
 ``` Regex
-@e(?:[^x]ample|x[^a]mple|xa[^m]ple|xam[^p]le|xamp[^l]e|xampl[^e])\.com
+
+Regex
+@e(?:[^u]reka|u[^r]eka|ur[^e]ka|ure[^k]a|urek[^a]|eurk[^a])\.com
+
+Detection
+
 ```
 
 character substitution
 ``` Regex
-@e(?!xample\.com).?x.?a.?m.?p.?l.?e\.com
+
+Regex
+@e(?!ureka\.com).?u.?r.?e.?k.?a\.com
+
+Detection
+
+
+```
+
+**character substitution**
+``` Regex
+[jJ][aA][cC][kK]\s[cC][aA][rR][tT][eE][rR]
+[jJ][aA][cC][kK]\s[aA-zZ]\s[cC][aA][rR][tT][eE][rR]
+[jJ][aA][cC][kK]\s[aA-zZ][.]\s[cC][aA][rR][tT][eE][rR]
+```
+
+**Misspelt Regex**
+
+letter substitution
+``` Regex 
+@e(?:[^u]reka|u[^r]eka|ur[^e]ka|ure[^k]a|urek[^a]|eurk[^a])\.com
+```
+
+character substitution
+``` Regex
+@e(?!ureka\.com).?u.?r.?e.?k.?a\.com
 ```
