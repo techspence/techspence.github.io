@@ -41,25 +41,29 @@ Here's some regex that can be used to detect look-a-like or misspelt domain name
 ``` Regex
 Regex
 @e(?:[^u]reka|u[^r]eka|ur[^e]ka|ure[^k]a|urek[^a]|eurk[^a])\.com
+```
 
 Detection
+
 (/assets/img/lettersubfake.png)
 
 Play with this regex
 https://regex101.com/r/tPVqPG/1/
-```
+
 
 **Character Substitution**
 ``` Regex
 Regex
 @e(?!ureka\.com).?u.?r.?e.?k.?a\.com
+```
 
 Detection
+
 (/assets/img/charactersubfake.png)
 
 Play with this regex
 https://regex101.com/r/nv7uIT/1
-```
+
 
 **Look-a-Like/Misspelt Domain Name Summary**
 
@@ -95,13 +99,17 @@ Here's some regex that can be used to detect names that use character substituti
 [jJ][aA][cC][kK]\s[cC][aA][rR][tT][eE][rR]
 [jJ][aA][cC][kK]\s[aA-zZ]\s[cC][aA][rR][tT][eE][rR]
 [jJ][aA][cC][kK]\s[aA-zZ][.]\s[cC][aA][rR][tT][eE][rR]
+```
 
+``` Regex
 You can also combine these into one regex with the | character, wrapped with ()
 ([jJ][aA][cC][kK]\s[cC][aA][rR][tT][eE][rR]|[jJ][aA][cC][kK]\s[aA-zZ]\s[cC][aA][rR][tT][eE][rR]|[jJ][aA][cC][kK]\s[aA-zZ][.]\s[cC][aA][rR][tT][eE][rR])
+```
 
 Detection
+
 (/assets/img/charactersubfake-ceoname.png)
 
 Play with this regex
 https://regex101.com/r/u1VvHb/1
-```
+
