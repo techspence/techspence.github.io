@@ -101,8 +101,8 @@ Here's some regex that can be used to detect names that use character substituti
 [jJ][aA][cC][kK]\s[aA-zZ][.]\s[cC][aA][rR][tT][eE][rR]
 ```
 
-``` Regex
 You can also combine these into one regex with the | character, wrapped with ()
+``` Regex
 ([jJ][aA][cC][kK]\s[cC][aA][rR][tT][eE][rR]|[jJ][aA][cC][kK]\s[aA-zZ]\s[cC][aA][rR][tT][eE][rR]|[jJ][aA][cC][kK]\s[aA-zZ][.]\s[cC][aA][rR][tT][eE][rR])
 ```
 
