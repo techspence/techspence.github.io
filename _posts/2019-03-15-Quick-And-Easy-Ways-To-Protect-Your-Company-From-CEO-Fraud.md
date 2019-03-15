@@ -46,9 +46,9 @@ Here's some regex that can be used to detect look-a-like or misspelt domain name
 
 **Detection**
 
-(/assets/img/lettersubfake.png)
+![Letter Substitution Fake Domain](/assets/img/lettersubfake.png)
 
-Play with this regex (https://regex101.com/r/tPVqPG/1/)
+Play with this regex [https://regex101.com/r/tPVqPG/1/](https://regex101.com/r/tPVqPG/1/)
 
 
 **Character Substitution**
@@ -58,9 +58,9 @@ Play with this regex (https://regex101.com/r/tPVqPG/1/)
 
 **Detection**
 
-(/assets/img/charactersubfake.png)
+![Character Substitution Fake Domain](/assets/img/charactersubfake.png)
 
-Play with this regex (https://regex101.com/r/nv7uIT/1)
+Play with this regex [https://regex101.com/r/nv7uIT/1](https://regex101.com/r/nv7uIT/1)
 
 
 **Look-a-Like/Misspelt Domain Name Summary**
@@ -108,7 +108,7 @@ You can also combine these into one regex with the | character, wrapped with ()
 
 **Detection**
 
-(/assets/img/charactersubfake-ceoname.png)
+![Character Substitution Fake CEO Name](/assets/img/charactersubfake-ceoname.png)
 
-Play with this regex (https://regex101.com/r/u1VvHb/1)
+Play with this regex [https://regex101.com/r/u1VvHb/1](https://regex101.com/r/u1VvHb/1)
 
