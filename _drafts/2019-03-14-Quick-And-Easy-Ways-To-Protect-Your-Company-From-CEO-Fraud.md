@@ -17,7 +17,7 @@ Now, the first thing to tackle before jumping into this is to make sure you have
 
 The thing I want you to focus on here is the **domain**, everything after the @ symbol. In this blog post, my made up CEO's name is Jack Carter and the company email is eureka[.]com. 
 
-    If you're a syfy fan you will know that Jack Carter was the quirky and trouble prone Sheriff of a town called Eureka in the show with the same name. I love that show. It's about a town of geniuses that are always causing trouble, blowing stuff up or wreaking some other kind of havoc on the town.
+*If you're a syfy fan you will know that Jack Carter was the quirky and trouble prone Sheriff of a town called Eureka in the show with the same name. I love that show. It's about a town of geniuses that are always causing trouble, blowing stuff up or wreaking some other kind of havoc on the town.*
 
 Ok here's an example of what i'm talking about:
 
@@ -43,7 +43,7 @@ Regex
 @e(?:[^u]reka|u[^r]eka|ur[^e]ka|ure[^k]a|urek[^a]|eurk[^a])\.com
 ```
 
-Detection
+**Detection**
 
 (/assets/img/lettersubfake.png)
 
@@ -57,7 +57,7 @@ Regex
 @e(?!ureka\.com).?u.?r.?e.?k.?a\.com
 ```
 
-Detection
+**Detection**
 
 (/assets/img/charactersubfake.png)
 
@@ -106,7 +106,7 @@ You can also combine these into one regex with the | character, wrapped with ()
 ([jJ][aA][cC][kK]\s[cC][aA][rR][tT][eE][rR]|[jJ][aA][cC][kK]\s[aA-zZ]\s[cC][aA][rR][tT][eE][rR]|[jJ][aA][cC][kK]\s[aA-zZ][.]\s[cC][aA][rR][tT][eE][rR])
 ```
 
-Detection
+**Detection**
 
 (/assets/img/charactersubfake-ceoname.png)
 
