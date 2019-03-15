@@ -41,7 +41,6 @@ Here's some regex that can be used to detect look-a-like or misspelt domain name
 
 **Letter Substitution**
 ``` Regex
-Regex
 @e(?:[^u]reka|u[^r]eka|ur[^e]ka|ure[^k]a|urek[^a]|eurk[^a])\.com
 ```
 
@@ -55,7 +54,6 @@ https://regex101.com/r/tPVqPG/1/
 
 **Character Substitution**
 ``` Regex
-Regex
 @e(?!ureka\.com).?u.?r.?e.?k.?a\.com
 ```
 
