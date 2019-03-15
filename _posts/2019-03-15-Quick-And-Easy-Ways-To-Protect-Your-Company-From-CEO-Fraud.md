@@ -58,7 +58,7 @@ Play with this regex: [https://regex101.com/r/tPVqPG/1/](https://regex101.com/r/
 
 **Detection**
 
-![Character Substitution Fake Domain](https://raw.githubusercontent.com/techspence/techspence.github.io/master/assets/img/charactersubfake.png)
+![Character Substitution Fake Domain](/assets/img/charactersubfake.PNG)
 
 Play with this regex: [https://regex101.com/r/nv7uIT/1](https://regex101.com/r/nv7uIT/1)
 
