@@ -108,7 +108,7 @@ You can also combine these into one regex with the | character, wrapped with ()
 
 **Detection**
 
-![Character Substitution Fake CEO Name](assets/img/charactersubfake-ceoname.png)
+![Character Substitution Fake CEO Name](/assets/img/charactersubfake-ceoname.png)
 
 Play with this regex: [https://regex101.com/r/u1VvHb/1](https://regex101.com/r/u1VvHb/1)
 
