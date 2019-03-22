@@ -8,7 +8,7 @@ In this blog post i'm going to share one quick and easy technique you can use to
     
 **What is CEO Fraud? What are Look-alike/Misspelled Domain Names?**
 
-CEO Fraud is a type of phishing email technique where an attacker targets your accounting or billing managers, CFO, HR or other executive. The attacker will use your CEO's name along with a look-alike or Misspelled email address that's similar to your companies in order to trick your billing manager into wiring money or convince your HR manager into sending W2's. The emails that use this strategy usually have some kind of financial or employee tax record motive to them. A look-alike or Misspelled domain name is pretty self explanatory. Attackers will try to use a domain that looks similar to your companys domain. Sometimes this can be very tricky!
+CEO Fraud is a type of phishing email technique where an attacker targets your accounting or billing managers, CFO, HR or other executive. The attacker will use your CEO's name along with a look-alike or Misspelled email address that's similar to your companies in order to trick your billing manager into wiring money or convince your HR manager into sending W2's. The emails that use this strategy usually have some kind of financial or employee tax record motive to them. A look-alike or Misspelled domain name is pretty self explanatory. Attackers will try to use a domain that looks similar to your company's domain. Sometimes this can be very tricky!
 
 Now, the first thing to tackle before jumping into this is to make sure you have the proper spoofing protections in place. If an attacker can spoof your companies domain, that's going to make it extremely difficult for your users to detect. So do that first. Then move onto this technique.
 
