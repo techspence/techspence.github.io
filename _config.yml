@@ -152,6 +152,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/techspence"
+    - label: "Dev.to"
+      icon: "fab fa-fw fa-dev"
+      url: "https://dev.to/@techspence"
 
 
 # Reading Files
