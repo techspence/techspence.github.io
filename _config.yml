@@ -133,6 +133,9 @@ author:
     - label: "Dev.to"
       icon: "fab fa-fw fa-dev"
       url: "https://dev.to/@techspence"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/spenceralessi"
 
 # Site Footer
 footer:
@@ -158,6 +161,9 @@ footer:
     - label: "Dev.to"
       icon: "fab fa-fw fa-dev"
       url: "https://dev.to/@techspence"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/spenceralessi"
 
 
 # Reading Files
