@@ -20,6 +20,8 @@ The thing I want you to focus on here is the **domain**, everything after the @ 
 
 What attackers are hoping is that your billing manager or HR rep doesn't pay attention to the sender's information, sees the name, which matches the CEO's name, glances over the look-alike/Misspelled domain name and continues onto the body of the email. Attackers are banking on your co-workers just being lazy. Encourage your users to stay vigilant and stay aware!
 
+(Edit 4/9/2019: I made a Github Repo to use as a single location for all sorts of phishing email filters I create. You can see the CEO Fraud detecting regex from this blog post here: https://github.com/techspence/PhishingFilter)
+
 Ok here's an example of what i'm talking about:
 
     a) Jack Carter <jcarter@eureka.com>
