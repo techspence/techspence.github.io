@@ -314,12 +314,11 @@ defaults:
   # _securityawareness
   - scope:
       path: ""
-      type: docs
+      type: securityawareness
     values:
       layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "securityawareness"
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
