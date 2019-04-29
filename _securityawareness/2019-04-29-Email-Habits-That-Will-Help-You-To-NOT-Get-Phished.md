@@ -16,7 +16,7 @@ Don’t take everything at face value. Before you open and click an email, go th
 
 # Always Hover
 
-Before clicking any links in the email, hover your mouse over the link and the actual URL will appear. Double check to make sure the real URL is leading you to the right place. You don’t want to be clicking a link to ([ju-spandoo.de/82359/index.html]ju-spandoo.de/82359/index[.]html). Hackers will also try to spoof the URL to look like the legitimate address. You want to investigate to make sure the domain is the same as the sender of the email.
+Before clicking any links in the email, hover your mouse over the link and the actual URL will appear. Double check to make sure the real URL is leading you to the right place. You don’t want to be clicking a link to [ju-spandoo.de/82359/index.html]ju-spandoo.de/82359/index[.]html. Hackers will also try to spoof the URL to look like the legitimate address. You want to investigate to make sure the domain is the same as the sender of the email.
 
 **DO NOT** 
 - Copy and paste the link into the URL section of your browser to check it. That’s the same as clicking the link.
