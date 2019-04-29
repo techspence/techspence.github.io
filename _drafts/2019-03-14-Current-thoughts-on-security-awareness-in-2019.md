@@ -38,7 +38,9 @@ I would never have known about this issue nor would I have been able to address 
 
 Communication is not only important, its critical. I guarantee you, even if you think you're a good communicator, you can do better and communicate more.
 
-Step 2. Technology
 
-Step 3. Education
+# Step 2. Technology
+
+
+# Step 3. Education
 Educate the CEO on current and emerging email threats. This is not a static exercise. This is something you should do continuously.

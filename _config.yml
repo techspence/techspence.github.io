@@ -291,6 +291,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  securityawareness:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -305,3 +311,15 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _securityawareness
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "securityawareness"
