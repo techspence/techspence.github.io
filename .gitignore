@@ -12,7 +12,6 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
-_data
 _saas
 .travis.yml
 Gemfile
