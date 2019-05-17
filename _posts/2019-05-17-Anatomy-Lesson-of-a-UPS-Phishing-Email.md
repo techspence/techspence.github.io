@@ -8,6 +8,8 @@ There is bound to be a number of phishing emails you will get that will be easy 
 
 In this phishing email anatomy lesson the assumption I am making is that you receive this supicious looking ups email to your **work** email account. While you certainly may get emails like this to your personal email address, the focus of this explanation will be on the workplace scenario.
 
+*note/disclaimer:* Jack Carter jcarter@eureka.com is a ficticious email address only used for demonstration purposes. Jack Carter is a character on the sy-fy show Eureka. Great show. So good. I don't actually own the eureka.com domain or anything like that. Just for demonstration.
+
 # <span style="color:red">**Red** </span>**flags**:
 
 1. **Expecting this email?** Did you order something that’s being shipped by UPS? If not, <span style="color:red">**Red Flag**</span>.
