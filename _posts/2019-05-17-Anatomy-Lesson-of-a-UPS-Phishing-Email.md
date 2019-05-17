@@ -33,7 +33,7 @@ And if you were not able to spot that this is a phishing email before clicking o
 
 Now, this in of itself doesn’t look that odd but consider it in context of the email. An email “from ups” is asking you to login with your Outlook, AOL or other email address? <span style="color:red">**Red Flag**</span>. This won’t always be the case and this one is honestly quite easy to spot. They won’t all be this way. These landing pages can be VERY convincing.
 
-**A good rule of thumb is: if you’re not sure, ASK!**
+**A good rule of thumb is: if you’re not sure, ASK! Contact your IT or Security department and ask them to help you determine the legitimacy of the email.**
 
 This might be a cheesy saying but just like when crossing the road, stop, look and "listen" for the phishing clues. 
 
