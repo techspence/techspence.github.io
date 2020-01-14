@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "2019 SANS Holiday Hack Challenge Write"
+title: "2019 SANS Holiday Hack Challenge Write Up"
 date: 2020-01-14
 ---
 Ho ho ho and welcome to my very first ever **SANS Holiday Hack Challenge** write-up! That’s right this is the very first time I have participated in a Holiday Hack Challenge and to be honest, this is the first Capture the Flag I have participated ever in my life. I haven’t even had the privilege yet to attend a SANS event. Although I hope to change that soon. That might sound crazy but it’s true. I never really thought that I would get much out of a CTF so I didn’t bother to take the time to try one. Well after the last 2 weeks I have realized I have never been more wrong.
