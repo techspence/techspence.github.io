@@ -12,4 +12,4 @@ My report is not as polished as I would like since I ran out of time at the end 
 
 Here's a link to open my write-up in PDF. Enjoy!
 
-![2019-SANS-Holiday-Hack-Challenge-Write-Up-by-Techspence.pdf](/assets/holidayhack/2019-SANS-Holiday-Hack-Challenge-Write-Up-by-Techspence.pdf)
+[2019 SANS Holiday Hack Challenge Write Up by Techspence](https://spenceralessi.com/assets/holidayhack/2019-SANS-Holiday-Hack-Challenge-Write-Up-by-Techspence.pdf)
