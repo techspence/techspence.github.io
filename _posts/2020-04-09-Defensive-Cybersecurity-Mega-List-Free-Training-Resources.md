@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "Defensive Cybersecurity Mega List - FREE Training Resources"
-date: 2020-03-05
+date: 2020-04-09
 ---
 A mega huge list of Cybersecurity Training Resources, that are completely **FREE**. This list has a little bit of everything, from Blogs and Webcasts to college level courses. This list is for anyone who is new to cybersecurity or is just getting into the industry and has only a few years experience. I think you will find this to be a really great starting point for advancing your knowledge and hands on skills.
 
@@ -23,6 +23,9 @@ A mega huge list of Cybersecurity Training Resources, that are completely **FREE
 
 ## Quick Reference Guide
 <details>
+
+**Defensive Security Handbook: Best Practices for Securing Infrastructure**
+- [https://www.amazon.com/Defensive-Security-Handbook-Practices-Infrastructure/dp/1491960388](https://www.amazon.com/Defensive-Security-Handbook-Practices-Infrastructure/dp/1491960388)
 
 **Black Hills Infosec Blog & Webcasts**
 - [https://www.blackhillsinfosec.com/blog/](https://www.blackhillsinfosec.com/blog/)
@@ -57,6 +60,9 @@ A mega huge list of Cybersecurity Training Resources, that are completely **FREE
 {: .notice--success}
 
 ## Defensive Cybersecurity Training Resources Explained
+
+### Defensive Security Handbook: Best Practices for Securing Infrastructure
+This book is far and away one of THE best books on defensive security for anyone new to the industry. This book will help you learn the basics, while arming you with the information you need to get a security program started or improve upon an already existing program. This book was written by Lee Brotherston and Amanda Berlin who together have decades of experience in information security. This book is a quick and easy read. So good in fact that you will find yourself reading it multiple times and referring back to it regularlly.
 
 ### Black Hills Infosec
 
