@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "Dos and Don'ts: Scam Prevention Tips"
-date: 2020-04-08
+date: 2020-04-13
 ---
 
 # The Dos and Don'ts of Protecting Yourself from Falling Victim to Scams
@@ -31,3 +31,6 @@ date: 2020-04-08
 - [FTC - Report Identity Theft and Get a Recovery Plan website](https://www.identitytheft.gov/)
 
 - [FTC Get a Free Credit Report website](https://www.consumer.ftc.gov/articles/0155-free-credit-reports)
+
+### We are all in this together
+If I can help answer any questions you have related to any IT or Security topic, please feel free to tweet me @techspence or connect with me on LinkedIn. I'm happy to answer your questions and who knows, maybe it would turn into a good blog post we can share with a larger audience.
