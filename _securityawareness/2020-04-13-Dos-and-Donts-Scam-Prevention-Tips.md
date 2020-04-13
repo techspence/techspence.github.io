@@ -27,7 +27,7 @@ My bank recently sent me an email about the DOs and DON'TS of protecting yoursel
 - <span style="color:red">**DON'T**</span> believe your caller ID. Phone numbers and caller IDs can be faked
 - <span style="color:red">**DON'T**</span> pay upfront for a promise for things such as debt relief, credit and loan offers, mortgage assistance, or a job
 
-# Some Helpfull Scam Prevention and Recovery Websites
+# Some Helpful Scam Prevention and Recovery Websites
 
 - [FTC Consumer Information Scam Alerts website](https://www.consumer.ftc.gov/features/scam-alerts)
 
