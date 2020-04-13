@@ -11,7 +11,7 @@ My bank recently sent me an email about the DOs and DON'TS of protecting yoursel
 
 
 ## <span style="color:green">DOs</span>
-- <span style="color:green">**DO**</span> be cognizent of WHO you share your personal information with and WHERE you share it
+- <span style="color:green">**DO**</span> be cognizant of WHO you share your personal information with and WHERE you share it
 - <span style="color:green">**DO**</span> be careful what links you click on
 - <span style="color:green">**DO**</span> be careful what attachments you open
 - <span style="color:green">**DO**</span> be careful who you send money to online
