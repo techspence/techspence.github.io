@@ -4,9 +4,9 @@ classes: wide
 title: "Defensive Cybersecurity Mega List - FREE Training Resources"
 date: 2020-04-09
 tags:   
-  - Defensive Cybersecurity
-  - Training Resources
-  - Online Courses
+  - Blueteam
+  - Training
+  - Mega List
 ---
 A mega huge list of Cybersecurity Training Resources, that are completely **FREE**. This list has a little bit of everything, from Blogs and Webcasts to college level courses. This list is for anyone who is new to cybersecurity or is just getting into the industry and has only a few years experience. I think you will find this to be a really great starting point for advancing your knowledge and hands on skills.
 
