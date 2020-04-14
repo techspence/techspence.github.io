@@ -3,6 +3,9 @@ layout: single
 classes: wide
 title: "Email Habits That Will Help You To NOT Get Phished"
 date: 2019-04-29
+tags:
+  - Phishing
+  - DOs & DON'Ts
 ---
 Phishing emails are not always obvious and when you're in your day to day get-work-done mode it can be easy to fall victim. This post covers a few basic email browsing habits that will help you to avoid getting phished.
 
