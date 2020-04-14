@@ -3,6 +3,10 @@ layout: single
 classes: wide
 title: "Penetration Testing Mega List - FREE Training Resources"
 date: 2020-03-04
+tags: 
+  - Pentesting
+  - Mega List
+  - Training
 ---
 
 

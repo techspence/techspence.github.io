@@ -3,6 +3,9 @@ layout: single
 classes: wide
 title: "Themes and Thoughts from the 2018 NYS Cybersecurity Conference"
 date: 2019-01-29
+tags:
+  - Conference Notes
+  - Brain Dump
 ---
 I had the opportunity to attend the 2018 NYS Cybersecurity Conference held in Albany NY. The conference is held every year in June and this year marked 21 years of the conference. I’ve attended this conference twice now, the first time last year (2017), and I always get a lot of value from this trip. This time I had the chance to also take a full day of training on the topic of DevSecOps (which was super awesome BTW) which I will share more about below. First, I always try to go into these conferences with an open mind and really try and come away with a few things in particular: major themes (high level thinking) and practical (more hands-on/tactical) things I can begin implementing immediately.
 
