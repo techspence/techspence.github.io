@@ -4,6 +4,7 @@ classes: wide
 title: "How to Check a Sketchy Link Without Clicking It"
 date: 2020-02-20
 tags:
+  - Cybersecurity Basics
   - Phishing
 ---
 Let's say you're working through your dozens of emails, responding to clients or customers or business partners and you come across this one email from your bank informing you that you need to reset your password. This email comes completely out of the blue and to top it off you don't recognize the senders email address. Do you click it?
@@ -37,7 +38,7 @@ Here are a few things that make a link sketchy, when visibly looking at it.
 
         _<sub>Note, these domains may or may not be valid at the time of you reading this</sub>_
 
-- Links that contain random numbers and/or letters. These are pretty obvious. Not all are malicious, however, anytime I see a url like this I immediatly get suspicious. It's not a trustworthy link in my opinion and should be investigated further.
+- Links that contain random numbers and/or letters. These are pretty obvious. Not all are malicious, however, anytime I see a url like this I immediately get suspicious. It's not a trustworthy link in my opinion and should be investigated further.
     
     - Examples:
         - eqbqcguiwcymao[.]info
@@ -45,7 +46,7 @@ Here are a few things that make a link sketchy, when visibly looking at it.
 
 ## Checking a link without clicking
 
-There is definitly no shortage of URL and website scanners out there. I've tried dozens of them. None of them seem as good to me as URLscan. It's fast, extremely detailed, provides a live screenshot and it allows you to link out to other scanns to check them as well. 
+There is definitely no shortage of URL and website scanners out there. I've tried dozens of them. None of them seem as good to me as URLscan. It's fast, extremely detailed, provides a live screenshot and it allows you to link out to other scans to check them as well. 
 
 ### URLScan - [https://urlscan.io](https://urlscan.io)
 
@@ -68,7 +69,7 @@ Now that you have your link pasted in, click Scan! Once URLScan is finished chec
 
     ![urlscan-googlesb.png](/assets/img/urlscan-googlesb.png)
 
-3. **Lookup the URL with other scanners**. The _lookup_ tab allows you to pick any of a number of other website scanners. This can help you gleen additional information about the site you're scanning incase you're still not sure about it.
+3. **Lookup the URL with other scanners**. The _lookup_ tab allows you to pick any of a number of other website scanners. This can help you glean additional information about the site you're scanning incase you're still not sure about it.
 
     ![urlscan-lookup.png](/assets/img/urlscan-lookup.png)
 
@@ -80,7 +81,7 @@ If you're at work and have an IT Department or Security Team, send it over to th
 
 
 ## Additional Information
-I did some googling on this topic and found some good articles related to suspcious and or malicious domains. The articles below go into much more detail on TLDs and their use for malicious or spammy activity. If you're into the technical nitty gritty these would be great reads.
+I did some googling on this topic and found some good articles related to suspicious and or malicious domains. The articles below go into much more detail on TLDs and their use for malicious or spammy activity. If you're into the technical nitty gritty these would be great reads.
 
 - [Newly Registered Domains: Malicious Abuse by Bad Actors](https://unit42.paloaltonetworks.com/newly-registered-domains-malicious-abuse-by-bad-actors)
 

@@ -4,6 +4,7 @@ classes: wide
 title: "Email Habits That Will Help You To NOT Get Phished"
 date: 2019-04-29
 tags:
+  - Cybersecurity Basics
   - Phishing
   - DOs & DON'Ts
 ---

@@ -4,6 +4,7 @@ classes: wide
 title: "Dos and Don'ts: Scam Prevention Tips"
 date: 2020-04-13
 tags:
+  - Cybersecurity Basics
   - Scams
   - Fraud
   - DOs & DON'Ts

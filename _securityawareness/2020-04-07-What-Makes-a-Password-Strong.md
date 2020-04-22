@@ -4,6 +4,7 @@ classes: wide
 title: "What Makes a Password Strong?"
 date: 2020-04-07
 tags:
+  - Cybersecurity Basics
   - Passwords
   - Password Manager
 ---
