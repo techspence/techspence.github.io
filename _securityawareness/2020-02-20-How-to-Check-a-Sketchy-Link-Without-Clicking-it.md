@@ -3,9 +3,6 @@ layout: single
 classes: wide
 title: "How to Check a Sketchy Link Without Clicking It"
 date: 2020-02-20
-tags:
-  - Cybersecurity Basics
-  - Phishing
 ---
 Let's say you're working through your dozens of emails, responding to clients or customers or business partners and you come across this one email from your bank informing you that you need to reset your password. This email comes completely out of the blue and to top it off you don't recognize the senders email address. Do you click it?
 

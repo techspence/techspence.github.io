@@ -3,11 +3,6 @@ layout: single
 classes: wide
 title: "Dos and Don'ts: Scam Prevention Tips"
 date: 2020-04-13
-tags:
-  - Cybersecurity Basics
-  - Scams
-  - Fraud
-  - DOs & DON'Ts
 ---
 
 My bank recently sent me an email about the DOs and DON'TS of protecting yourself against scams. While they had some great tips, I felt like some of them fell short. So I wanted to share some of my own scam prevention tips in hopes that they provide you some things to consider. So here are 6 DOs and 6 DON'Ts when it comes to scam prevention.

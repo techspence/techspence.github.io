@@ -3,9 +3,6 @@ layout: single
 classes: wide
 title: "Anatomy Lesson of a UPS Phishing Email"
 date: 2019-05-17
-tags:
-  - Cybersecurity Basics
-  - Phishing
 ---
 There is bound to be a number of phishing emails you will get that will be easy to spot. Fortunately there is still a fair amount of large phishing campaigns that take more of the spray and pray approach than one of researching and targeting a specific organization or person. The ones that can really get you are the simple ones, with just a little text, a photo of a trusted brand and a link and a somewhat realistic looking landing page. In this post I will show you what the <span style="color:red">red flags</span> (aka warning signs) are for this super tricky phishing email.
 
