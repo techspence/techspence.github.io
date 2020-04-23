@@ -298,6 +298,7 @@ collections:
   securityawareness:
     output: true
     permalink: /:collection/:path/
+    sort_by: date
 
 
 # Defaults
@@ -316,7 +317,7 @@ defaults:
   # _securityawareness
   - scope:
       path: ""
-      type: securityawareness
+      type: posts
     values:
       layout: single
       author_profile: true

@@ -1,14 +1,16 @@
 ---
 layout: single
 classes: wide
-title: "Using Powershell and Microsoft EWS Managed API to download attachments in Exchange 2016"
+title: "Using PowerShell and Microsoft EWS Managed API to download attachments in Exchange 2016"
 date: 2019-03-08
 tags:
-  - Powershell
+  - PowerShell
   - Microsoft Exchange
   - Scripting
+categories:
+  - Write-up
 ---
-Have you ever used a piece of software that provides no way of saving attachments or reports directly to a file? Yeah, me too. It's frustrating. I'm very passionate about automating repetitive tasks and the frustration I've had over this particular issue has caused me to look into a solution. What I found was that I can use my beloved Powershell, in combination with Microsoft Exchange Web Services Managed API, to download attachments from my (or any other) outlook mailbox. So, to solve this little problem and add a bit of automation I have created a Powershell script, that runs from a scheduled task, that will do just that. This blog post describes the details of how this Powershell script works. I call it, not so cleverly, [EWSEmailAttachmentSaver](https://github.com/techspence/EWSEmailAttachmentSaver).
+Have you ever used a piece of software that provides no way of saving attachments or reports directly to a file? Yeah, me too. It's frustrating. I'm very passionate about automating repetitive tasks and the frustration I've had over this particular issue has caused me to look into a solution. What I found was that I can use my beloved PowerShell, in combination with Microsoft Exchange Web Services Managed API, to download attachments from my (or any other) outlook mailbox. So, to solve this little problem and add a bit of automation I have created a PowerShell script, that runs from a scheduled task, that will do just that. This blog post describes the details of how this PowerShell script works. I call it, not so cleverly, [EWSEmailAttachmentSaver](https://github.com/techspence/EWSEmailAttachmentSaver).
 
 Although this blog post is more related to system administration than security in terms of who would be creating this type of script at a given organization, my opinion is that the same qualities and skills that make up a good sysadmin overlap with the qualities and skills that make up a good information security practitioner. Fortunately, I work for an organization that has a relatively small IT department and I am given the freedom and autonomy to work on projects like this. Also, i've worked my way up the ranks from Help Desk and I am used to creating these scripts and automated processes, because that's what I have been doing the last 8 years. So now onto explaining the script..
 
@@ -18,11 +20,11 @@ I think it's really import to make sure you provide good documentation with and/
 
 ## Resources
 Upon deciding I wanted to create a script to automate some of my daily reports I found some very helpful blog posts. The two main blog posts this script was built from are:
-- [EWS Managed API and Powershell How-To series Part 1](https://gsexdev.blogspot.com/2012/01/ews-managed-api-and-powershell-how-to.html)
+- [EWS Managed API and PowerShell How-To series Part 1](https://gsexdev.blogspot.com/2012/01/ews-managed-api-and-PowerShell-how-to.html)
 
 - [Writing a simple scripted process to download attachments in Exchange 2007/ 2010 using the EWS Managed API](https://gsexdev.blogspot.com/2010/01/writing-simple-scripted-process-to.html)
 
-Glen's examples and write ups were very helpful in understanding EWS and how to write some Powershell to work with the API. Thanks Glen! If you are interested in learning more about Exchange or Office365 and Powershell, be sure to check out his blog. [Glen's Exchange and Office 365 Dev Blog](https://gsexdev.blogspot.com)
+Glen's examples and write ups were very helpful in understanding EWS and how to write some PowerShell to work with the API. Thanks Glen! If you are interested in learning more about Exchange or Office365 and PowerShell, be sure to check out his blog. [Glen's Exchange and Office 365 Dev Blog](https://gsexdev.blogspot.com)
 
 ## EWS Email Attachment Saver
 
@@ -61,13 +63,13 @@ To quickly view the outlook folder location, right click on a folder in outlook,
 
 _Example: processed folder is a subfolder of the root mailbox:_ `Location: \\email@company.com\ProcessedFolder`
 
-```Powershell
+```PowerShell
 $processedfolderpath = "/ProcessedFolder"
 $tftargetidroot = New-Object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::MsgFolderRoot,$mailbox)
 ```
 _Example, processed folder is a subfolder of Inbox:_ `Location: \\email@company.com\Inbox\ProcessedFolder`
 
-```Powershell    
+```PowerShell    
 $processedfolderpath = "/Inbox/ProcessedFolder"
 $tftargetidroot = New-Object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::Inbox,$processedfolderpath)
 ```
@@ -91,7 +93,7 @@ Now that i've explained what the functions do, we can move on to explaining the 
 
 Once you download and install the Exchange EWS API components you need to load the appropriate EWS dll for the API namespace you want to use. By loading the `Microsoft.Exchange.WebServices.Data` namespace we have access to a majority of the EWS classes and methods. Here is how you load the EWS dll.
 
-```Powershell
+```PowerShell
 $dllpath = "C:\Program Files\Microsoft\Exchange\Web Services\2.2\Microsoft.Exchange.WebServices.dll"
 [void][Reflection.Assembly]::LoadFile($dllpath)
 ```
@@ -103,7 +105,7 @@ Once you load the Webservices dll you can begin working with it. To read more ab
 
 Now you need to create an EWS Service Object for the target mailbox. There are many ways you can authentication to the EWS API. For my script I chose to just use my organizations Autodiscover URL, which allows me to authenticate using the user who is running the script.
 
-```Powershell
+```PowerShell
 $exchangeservice.UseDefaultCredentials = $true
 $exchangeservice.AutodiscoverUrl($mailbox)
 ```
@@ -114,7 +116,7 @@ This also makes it convenient for me when I create a scheduled task out of this 
 
 Now you need to simply Bind to the users Inbox. There are again a few ways to do this. I chose to use the `WellKnownFolderName` enum. `WellKnownFolderName` defines common folder names that are used in a users mailbox.
 
-```Powershell
+```PowerShell
 $inboxfolderid = New-Object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::Inbox,$mailbox)
 $inboxfolder = [Microsoft.Exchange.WebServices.Data.Folder]::Bind($exchangeservice,$inboxfolderid)
 ```
@@ -128,7 +130,7 @@ One cool thing to note is you can chain these filters together, throw an `And` a
 
 Once you create those variables you add them all up into a collection and use that to find all the emails you're targeting.
 
-```Powershell
+```PowerShell
 $sfunread = New-Object Microsoft.Exchange.WebServices.Data.SearchFilter+IsEqualTo([Microsoft.Exchange.WebServices.Data.EmailMessageSchema]::IsRead, $false)
 $sfsubject = New-Object Microsoft.Exchange.WebServices.Data.SearchFilter+ContainsSubstring ([Microsoft.Exchange.WebServices.Data.EmailMessageSchema]::Subject, $subjectfilter)
 $sfattachment = New-Object Microsoft.Exchange.WebServices.Data.SearchFilter+IsEqualTo([Microsoft.Exchange.WebServices.Data.EmailMessageSchema]::HasAttachments, $true)
@@ -141,9 +143,9 @@ $sfcollection.add($sfattachment)
 
 **"View" the Results**
 
-I create a view filter so as to limit the query overhead. I chose to make this script view 10 items at a time. This was a tip I found from [Using PowerShell and EWS to monitor a mailbox](https://seanonit.wordpress.com/2014/10/29/using-powershell-and-ews-to-monitor-a-mailbox/).
+I create a view filter so as to limit the query overhead. I chose to make this script view 10 items at a time. This was a tip I found from [Using PowerShell and EWS to monitor a mailbox](https://seanonit.wordpress.com/2014/10/29/using-PowerShell-and-ews-to-monitor-a-mailbox/).
 
-```Powershell
+```PowerShell
 $view = New-Object -TypeName Microsoft.Exchange.WebServices.Data.ItemView -ArgumentList 10
 $foundemails = $inboxfolder.FindItems($sfcollection,$view)
 ```

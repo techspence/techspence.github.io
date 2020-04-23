@@ -4,13 +4,15 @@ classes: wide
 title: "AWS re:Inforce 2019 - Themes and Thoughts"
 date: 2019-07-01
 tags:
-  - AWS
+  - AWS reInforce
   - Conferences
+  - Layered Security
+categories:
   - Brain Dump
 ---
 
-# The Inagural re:Inforce
-This year was the inagural AWS re:Inforce conference, held in Boston, June 25-26th. For anyone unfamiliar re:Inforce is a conference dedicated solely to security OF and security IN AWS.
+# The Inaugural re:Inforce
+This year was the inaugural AWS re:Inforce conference, held in Boston, June 25-26th. For anyone unfamiliar re:Inforce is a conference dedicated solely to security OF and security IN AWS.
 
 While at the conference I attended 10 sessions ranging from 1-2 hours each. One of those sessions was a security leadership tabletop exercise, which was eye opening and very much a big learning experience. I also attended a hands-on session with the AWS Security Hub. While at the conference AWS also offered free training via QwikLabs. I completed two 1-hour trainings on AWS Identity & Access Management (IAM) and Simple Storage Service (S3).
 

@@ -30,6 +30,12 @@ layout: archive
     {% if category[1].size == i %}
       <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
+        {% if category[0] == "Security Awareness" %}
+          <p>Please feel free to copy, borrow or steal this content and use it for your own security program. 
+            Send these tips to your co-workers, employees and your boss, or heck, even share it with your friends 
+            and family on social media.
+          </p>
+        {% endif %}
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in category.last %}
             {% include archive-single.html type=page.entries_layout %}

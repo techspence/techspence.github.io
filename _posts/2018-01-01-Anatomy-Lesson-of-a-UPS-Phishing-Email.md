@@ -2,7 +2,14 @@
 layout: single
 classes: wide
 title: "Anatomy Lesson of a UPS Phishing Email"
-date: 2019-05-17
+date: 2018-01-01
+tags:
+  - Phishing
+  - UPS
+  - Sketchy links
+categories:
+  - Write-up
+  - Security Awareness
 ---
 There is bound to be a number of phishing emails you will get that will be easy to spot. Fortunately there is still a fair amount of large phishing campaigns that take more of the spray and pray approach than one of researching and targeting a specific organization or person. The ones that can really get you are the simple ones, with just a little text, a photo of a trusted brand and a link and a somewhat realistic looking landing page. In this post I will show you what the <span style="color:red">red flags</span> (aka warning signs) are for this super tricky phishing email.
 
@@ -25,7 +32,7 @@ Here is the email itself. Make note of the <span style="color:red">red flags</sp
 
 ![upsphishing.png](/assets/img/upsphishing.png)
 
-If you were to hover your mouse over the **Track parcel** link inside this email, you would see whats shown in this image.
+If you were to hover your mouse over the **Track parcel** link inside this email, you would see what's shown in this image.
 
 ![upsphishingurl.png](/assets/img/upsphishingurl.png)
 

@@ -5,9 +5,10 @@ title: "Quick And Easy Ways to Protect Your Company From CEO Fraud"
 date: 2019-03-15
 tags:
   - CEO Fraud
-  - Phishing
   - Blueteam
   - Regex
+categories:
+  - Write-up
 ---
 In this blog post i'm going to share one quick and easy technique you can use to protect your company from 2 different types of CEO fraud. The technique I detail in this blog post is not the only way to detect these emails. It's just one of many ways. Also. please know that nothing in this blog post is new or ground breaking. I don't propose any new fancy techniques. There are times in security where detection and prevention just comes down to a few simple, yet tedious tasks. This is one of those situations. By using a little understanding of what attackers try to do with some regular expression knowledge you can mitigate a good chuck of CEO fraud emails. My hope is that you get some value from this or maybe it prompts you to think about your phishing detection a little bit differently.
     
