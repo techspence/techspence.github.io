@@ -54,7 +54,7 @@ For future reference, QwikLabs was really nice, easy to understand and follow an
 
 - Engineering, especially cloud and platform engineering is becoming a very necessary team in today’s organizations. For Utica maybe this means dedicating more resources to hire engineers.
 
-- Should talk/review our AWS account/permission strategy or the strategy OS plans to use. Should we have separate accounts for prod, dev, test or should it be separated by LOB or something else?
+- Review your AWS account/permission strategy. Ask yourself questions like: "Should we have separate accounts for production, development and test or should it be separated by line of business or by something else?
 
 - Focus on the security objectives but don’t be close minded on the method or the strategy in which those objectives are achieved. How things are done in the on prem world may be and is very likely done differently in a cloud env.
 
