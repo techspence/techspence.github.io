@@ -1,4 +1,4 @@
-a.link.help.js-help {
+a.link.help.js-help[aria-expanded="true"] {
     display: none;
 }
 
