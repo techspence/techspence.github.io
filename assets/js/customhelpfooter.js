@@ -1,3 +1,3 @@
-window.onload = function WindowLoad(event) {
+$(document).ready(function () {
     document.getElementById("help-links-container").style.display = "block";
-}
+});
