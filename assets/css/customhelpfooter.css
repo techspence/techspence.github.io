@@ -1,3 +1,7 @@
 a.link.help.js-help {
     display: none;
 }
+
+ul#help-links-container {
+    display: block;
+}
