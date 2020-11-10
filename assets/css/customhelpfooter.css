@@ -1,5 +1,5 @@
 a.link.help.js-help[aria-expanded="true"] {
-    display: none;
+    visibility: hidden;
 }
 
 ul#help-links-container {
