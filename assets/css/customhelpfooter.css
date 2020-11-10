@@ -1,3 +1,3 @@
-a.link.help.js-help[aria-expanded="true"] {
-
+ul#help-links-container {
+ display: block; 
 }
