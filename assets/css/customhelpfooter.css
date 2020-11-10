@@ -1,3 +1,9 @@
-ul#help-links-container[style] {
- display: block; 
+a.link.help.js-help {
+    visibility: hidden;
+}
+
+ul#help-links-container {
+    position: relative;
+    top: -30px;
+    margin-bottom: -20px;
 }
