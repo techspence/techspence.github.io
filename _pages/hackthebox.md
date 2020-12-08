@@ -6,7 +6,6 @@ permalink: /hackthebox/
 author_profile: false
 toc: true
 sidebar:
-  - title: "Write-Ups"
     image: https://www.hackthebox.eu/images/logo600.png
     image_alt: "hackthebox"
     nav: htb-writeups
