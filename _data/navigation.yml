@@ -23,3 +23,7 @@ htb-writeups:
     children:
       - title: "TBD"
         url: /
+htb-jerry:
+  - title:
+    image: https://www.spenceralessi.com/assets/img/htb-jerry-info.png
+    image_alt: "hackthebox jerry info"
