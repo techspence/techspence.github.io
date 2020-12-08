@@ -9,8 +9,8 @@ main:
 htb-writeups:
   - title: "Easy"
     children:
-      - title: "Bashed [Linux]"
-        url: /
+      - title: "Jerry [Windows] (Easy)"
+        url: /htb-jerry
       - title: "Blue [Windows]"
         url: /
       - title: "Grandpa [Windows]"
