@@ -9,6 +9,7 @@ sidebar:
   - title: Jerry [Windows]
     image: https://www.spenceralessi.com/assets/img/htb-jerry.png
     image_alt: "hackthebox jerry"
+    nav: htb-jerry
 ---
 
 # Enumeration
