@@ -1,6 +1,5 @@
 ---
 layout: single
-classes: wide
 title: "Coming Soon: HackTheBox Write-ups"
 date: 2020-12-07
 collection: hackthebox
