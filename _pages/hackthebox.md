@@ -1,18 +1,21 @@
 ---
 layout: single
-title: "HackTheBox Write-Ups"
+title: "Spencer's HTB Write-Ups"
 collection: hackthebox
 permalink: /hackthebox/
 author_profile: false
 toc: true
 sidebar:
-  - title: "COMING SOON :D"
-    image: http://placehold.it/350x250
-    image_alt: "image"
-    text: "Some text here."
-  - title: "Another Title"
-    text: "More text here."
-    nav: coming-soon
+  - title: "Write-Ups"
+    image: https://www.hackthebox.eu/images/logo600.png
+    image_alt: "hackthebox"
+    children:
+      - title: "Bashed"
+        url: /
+      - title: "Blue"
+        url: /
+      - title: "Grandpa"
+        url: /
 ---
 
 Hey everyone. Welcome to my blog. Specifically my HackTheBox Write-up section. I am currently working on developing my skills as a Penetration Tester and Ethical Hacker and as part of that I want to share my write-ups as I complete boxes. I'm a firm believer that to truly know something is to teach it. So that's what I plan to do with my write-ups. I will be creating my write-ups in a way that I think will help me better understand the hacker methodology, tools and techniques. In doing so I hope to provide insight what I am learning so that maybe by way of me explaining it you're able to understand it or understand it better. My goal is to not just teach and document for my self but to be of value and provide education (and hopefully entertainment :O) ) to others!
