@@ -9,6 +9,8 @@ toc: true
 
 ![htb-jerry.png](/assets/img/htb-jerry.png)
 
+# Skills Learned
+
 # Enumeration
 
 # Exploitation
@@ -17,4 +19,4 @@ toc: true
 
 # Exfiltration
 
-# Remediationm
+# Remediation
