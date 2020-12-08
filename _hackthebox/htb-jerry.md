@@ -7,7 +7,7 @@ author_profile: false
 toc: true
 ---
 
-![htb-jerry.png](/ssets/img/htb-jerry.png)
+![htb-jerry.png](/assets/img/htb-jerry.png)
 
 # Enumeration
 
