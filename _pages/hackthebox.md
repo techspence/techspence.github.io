@@ -1,6 +1,6 @@
 ---
 title: "HackTheBox Write-Ups"
-layout: category
+layout: single
 permalink: /hackthebox/
 taxonomy: hackthebox
 ---
