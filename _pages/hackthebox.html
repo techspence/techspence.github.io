@@ -14,7 +14,7 @@ Placeholder for all my HackTheBox Write-ups. COMING SOON :D
   {% unless collection.output == false or collection.label == "posts" %}
 
   {% endunless %}
-  {% for post in collection.docs %}
+  {% for post in collection.hackthebox %}
     {% unless collection.output == false or collection.label == "posts" %}
       {% include archive-single.html %}
     {% endunless %}
