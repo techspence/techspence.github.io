@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "Totally Free Security Awareness Content"
-    url: /securityawareness
-    description: Totally Free Security Awareness Content
   - title: "HackTheBox Write-Ups"
     url: /hackthebox
     description: Check out my HackTheBox Write-ups
+  - title: "Totally Free Security Awareness Content"
+    url: /securityawareness
+    description: Totally Free Security Awareness Content
