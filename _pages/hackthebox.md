@@ -1,9 +1,6 @@
 ---
-layout: single
 title: "HackTheBox Write-Ups"
-author_profile: true
+layout: category
 permalink: /hackthebox/
-collection: hackthebox
 taxonomy: hackthebox
-entries_layout: # list (default), grid
 ---
