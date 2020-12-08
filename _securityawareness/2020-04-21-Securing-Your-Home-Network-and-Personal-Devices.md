@@ -3,6 +3,8 @@ layout: single
 classes: wide
 title: "Securing Your Home Network and Personal Devices"
 date: 2020-04-20
+collection: securityawareness
+taxonomy: securityawareness
 ---
 Here are a few quick tips that will help you secure your home network as well as your personal devices like your phone and your computer or laptop.
 

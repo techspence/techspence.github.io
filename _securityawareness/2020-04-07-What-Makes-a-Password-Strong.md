@@ -3,6 +3,8 @@ layout: single
 classes: wide
 title: "What Makes a Password Strong?"
 date: 2020-04-07
+collection: securityawareness
+taxonomy: securityawareness
 ---
 Passwords are one of the weakest links in security. They are hard to remember, often have crazy complexity requirements attached to them and to top it off, there's millions of passwords available online, that people are using every day, to log into their bank accounts and social media. Bare with me as I share 3 tips for what makes a password strong.
 
