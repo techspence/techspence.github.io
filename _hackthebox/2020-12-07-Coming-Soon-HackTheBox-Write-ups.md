@@ -4,6 +4,7 @@ title: "Coming Soon: HackTheBox Write-ups"
 date: 2020-12-07
 collection: hackthebox
 taxonomy: hackthebox
+author_profile: false
 sidebar:
   - title: "COMING SOON :D"
     image: http://placehold.it/350x250
