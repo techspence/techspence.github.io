@@ -310,7 +310,6 @@ defaults:
       comments: # true
       share: true
       related: true
-      toc: true
   # _securityawareness
   - scope:
       path: ""
@@ -322,7 +321,6 @@ defaults:
       comments: # true
       share: true
       related: true
-      toc: true
 # _hackthebox
   - scope:
       path: ""
