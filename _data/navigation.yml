@@ -9,11 +9,11 @@ main:
 htb-writeups:
   - title: "Easy"
     children:
-      - title: "Bashed"
+      - title: "Bashed [Linux]"
         url: /
-      - title: "Blue"
+      - title: "Blue [Windows]"
         url: /
-      - title: "Grandpa"
+      - title: "Grandpa [Windows]"
         url: /
   - title: "Medium"
     children:
