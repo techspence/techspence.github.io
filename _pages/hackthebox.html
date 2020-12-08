@@ -16,7 +16,7 @@ collection: hackthebox
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
   {% endunless %}
-  {% for post in hackthebox %}
+  {% for post in collection.docs %}
     {% unless collection.output == false or collection.label == "posts" %}
       {% include archive-single.html %}
     {% endunless %}
