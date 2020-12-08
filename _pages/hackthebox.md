@@ -3,6 +3,7 @@ layout: single
 title: "HackTheBox Write-Ups"
 author_profile: true
 permalink: /hackthebox/
+collection: hackthebox
 ---
 
 Placeholder for all my HackTheBox Write-ups. COMING SOON :D
