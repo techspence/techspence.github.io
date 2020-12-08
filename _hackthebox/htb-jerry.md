@@ -1,6 +1,5 @@
 ---
 layout: single
-classes: wide
 title: "HackTheBox - Jerry"
 collection: hackthebox
 permalink: /htb-jerry/
@@ -8,7 +7,7 @@ author_profile: false
 toc: true
 ---
 
-![htb-jerry.png](assets/img/htb-jerry.png)
+![htb-jerry.png](/ssets/img/htb-jerry.png)
 
 # Enumeration
 
