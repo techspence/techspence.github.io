@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "HackTheBox - Jerry"
 collection: hackthebox
 permalink: /htb-jerry/
@@ -7,7 +8,7 @@ author_profile: false
 toc: true
 ---
 
-https://www.spenceralessi.com/assets/img/htb-jerry.png
+![htb-jerry.png](assets/img/htb-jerry.png)
 
 # Enumeration
 
