@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: collection
 title: "HackTheBox Write-Ups"
 collection: hackthebox
 permalink: /hackthebox/
