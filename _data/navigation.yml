@@ -29,21 +29,3 @@ coming-soon:
         url: /
       - title: "Child Page B5"
         url: /
-  - title: "Parent Page C"
-    children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
-    children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
