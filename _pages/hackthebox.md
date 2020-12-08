@@ -3,7 +3,7 @@ layout: collection
 title: "HackTheBox Write-Ups"
 collection: hackthebox
 permalink: /hackthebox/
-author_profile: false
+author_profile: true
 toc: true
 ---
 
