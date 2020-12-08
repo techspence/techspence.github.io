@@ -1,7 +1,7 @@
 ---
 layout: collection
 title: "Totally Free Security Awareness Content"
-collection: securityawaress
+collection: securityawareness
 permalink: /securityawareness/
 author_profile: true
 ---
