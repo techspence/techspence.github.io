@@ -6,3 +6,20 @@ main:
   - title: "Totally Free Security Awareness Content"
     url: /securityawareness
     description: Totally Free Security Awareness Content
+htb-writeups:
+  - title: "Easy"
+    children:
+      - title: "Bashed"
+        url: /
+      - title: "Blue"
+        url: /
+      - title: "Grandpa"
+        url: /
+  - title: "Medium"
+    children:
+      - title: "TBD"
+        url: /
+  - title: "Hard"
+    children:
+      - title: "TBD"
+        url: /
