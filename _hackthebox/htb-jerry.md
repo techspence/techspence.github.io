@@ -5,12 +5,9 @@ collection: hackthebox
 permalink: /htb-jerry/
 author_profile: false
 toc: true
-sidebar:
-  - title: Jerry [Windows]
-    image: https://www.spenceralessi.com/assets/img/htb-jerry.png
-    image_alt: "hackthebox jerry"
-    nav: htb-jerry
 ---
+
+https://www.spenceralessi.com/assets/img/htb-jerry.png
 
 # Enumeration
 
