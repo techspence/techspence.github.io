@@ -6,7 +6,7 @@ permalink: /hackthebox/
 author_profile: false
 toc: true
 sidebar:
-    image: https://www.hackthebox.eu/images/logo600.png
+    image: https://www.spenceralessi.com/assets/img/htblogo.png
     image_alt: "hackthebox"
     nav: htb-writeups
 ---
