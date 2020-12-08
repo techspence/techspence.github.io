@@ -1,9 +1,9 @@
 ---
-layout: collection
-title: "Recipes"
+layout: wide
+title: "HackTheBox Write-Ups"
 collection: hackthebox
 permalink: /hackthebox/
 author_profile: false
 ---
 
-Sample document listing for the collection `_recipes`.
+Future home of my HackTheBox Write-Ups. COMING SOON :D
