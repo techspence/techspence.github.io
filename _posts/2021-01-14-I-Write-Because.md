@@ -30,10 +30,12 @@ This is not the first time I have pondered the questions, why do I write, howeve
 As of now, my conclusions is that I write to achieve one/a combination of/or all three of the following objectives:
 
 1) develop my understanding of a topic
-    > "Teaching is the highest form of understanding." –Aristotle
+    
+> "Teaching is the highest form of understanding." –Aristotle
 
 2) Solidify my own beliefs on a subject
-    > "The best teachers are the ones that change their minds" –Terry Heick
+    
+> "The best teachers are the ones that change their minds" –Terry Heick
 
 3) Provide value in the form of information, education or entertainment to you the reader
 
