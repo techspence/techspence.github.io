@@ -19,7 +19,7 @@ I try really hard to always make progress on something, daily. It makes me feel 
 
 When I go out skateboarding or snowboarding I try my darndest to be just a tiny bit better today than I was yesterday. I try to land one new trick or land a previous trick just a tiny bit cleaner or just improve one little bit of something every time I go out. It doesn't have to be groundbreaking or even challenging every time I go out. The important thing is that I continue to progress. Even when I don't feel like it.
 
-I take that same approach with my job and my profession. As someone in Information Security it's important to not 'rest on one's laurels.' Security, like technology, is vast, diverse and is rapidly changing. It's important that progress and (curiosity)[https://www.spenceralessi.com/3-Important-Qualities-For-Infosec-Practitoners] is a core component of your daily life so you don't get left behind.
+I take that same approach with my job and my profession. As someone in Information Security it's important to not 'rest on one's laurels.' Security, like technology, is vast, diverse and is rapidly changing. It's important that progress and [curiosity](https://www.spenceralessi.com/3-Important-Qualities-For-Infosec-Practitoners) is a core component of your daily life so you don't get left behind.
 
 "Progress is made by doing, not by pondering" is also a reminder to me to not fall into the trap of analysis paralysis. Just like if you want nice abs, if you have goals and things you want to accomplish, you've got to put in the work.
 
