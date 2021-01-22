@@ -6,7 +6,7 @@ date: 2021-01-22
 ---
 When I was younger I thought I knew everything. How naive right? In a way though...I did know everything.
 
-See the problem was, what I didn't know at that time was that I don't know what I don't know. That's what makes this tweet by EJ Koh resonate with me so much.
+See the problem was, what I didn't know at that time was that I don't know what I don't know. That's what makes this tweet by [EJ Koh](https://twitter.com/thisisEJKoh) resonate with me so much.
 
 ![EJKoh Education Tweet](/assets/img/ejkohtweet.png)
 
