@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: Infosec What Are We Fighting For?
-date: 2021-02-01
+date: 2021-02-02
 ---
 [Evan Francen](https://twitter.com/evanfrancen) recently posted a very [thought provoking post on LinkedIn](https://www.linkedin.com/posts/evanfrancen_privacy-missionbeforemoney-activity-6760827622193811456-_r9v/) regarding the data privacy dilemma.
 
