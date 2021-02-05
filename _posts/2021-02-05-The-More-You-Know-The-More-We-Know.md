@@ -12,8 +12,8 @@ I'm writing this post with the #infosec industry in mind. I'm thinking of the te
 
 We can always do more as part of a collective. We will always be smarter and more well-rounded as a collective. We will always consider more perspectives as part of a collective.
 
-There will always be at least one stone unturned and there will always be one angle that wasn't thought of and that to me is the key point. We don't know what we don't know and by having more people speak, share and contribute we know more. The more we know the better able we are to tackle problems, address risks, fix vulnerabilities or fix issues before they become catastrophes. 
+There will always be at least one stone unturned and there will always be one angle that wasn't thought of and that to me is the key point. [We don't know what we don't know](https://www.spenceralessi.com/You-Don't-Know-Jack/) and by having more people speak, share and contribute we know more. The more we know the better able we are to tackle problems, address risks, fix vulnerabilities or fix issues before they become catastrophes. 
 
-I encourage you. If you have something to share, contribute to the conversation or start your own. You, yes YOU, have value to add. Whether you believe it or not.
+I encourage you. If you have something to share, contribute to the conversation or [start your own](https://www.spenceralessi.com/What-Would-You-Say-If-You-Had-Everyones-Attention/). You, yes YOU, have [value](https://www.spenceralessi.com/Abundance/) to add. Whether you believe it or not.
 
 The more you know, the more we know.
