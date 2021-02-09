@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "2020 SANS Holiday Hack Challenge Write Up"
-date: 2020-02-09
+date: 2021-02-09
 tags:
   - Holiday Hack
   - CTF
