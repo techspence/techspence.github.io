@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "Sucessful Leaders Don't Win"
-date: 2020-02-09
+date: 2021-02-09
 ---
 > "The only meaningful measure for a leader is whether the team succeeds or fails.
 
@@ -12,7 +12,7 @@ I don't believe "the only meaninful measure for a leader is whether the team suc
 
 While the book opens with some compelling arguments, most of which I agree with, I don't agree with this line. Now, this is a rather annecdotal quote and the authors go on to explain that of course failures matter and all great leaders not only fail, but learn and grow from their failures.
 
-But I don't think it's such an easy binary thing to say that the only measure of a great leader is winning or losing.
+But I don't think it's such an easy binary thing to say that the only measure of a great leader is winning or losing. To me, successful leaders don't win....exclusively.
 
 Leaders don't just win. They inspire, invoke and ignite others. 
 
