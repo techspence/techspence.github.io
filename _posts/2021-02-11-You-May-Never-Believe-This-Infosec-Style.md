@@ -28,6 +28,8 @@ You may never beleive this...Two factor and multifactor authentication, while gr
 
 You may never beleive this...People really do care about security (and privacy), the "trick" is to figure out _why_ they care.
 
+You may never beleive this..."Users" are not stupid.
+
 You may never beleive this...We are all in this together.
 
 You may never beleive this...We are all on the same side.
