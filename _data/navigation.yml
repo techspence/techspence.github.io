@@ -1,25 +1,8 @@
 # main links
 main:
-  - title: "HackTheBox Write-Ups"
-    url: /hackthebox
-    description: Check out my HackTheBox Write-ups
+  - title: "Spencer's CVEs"
+    url: /CVEs
+    description: Check out my CVEs
   - title: "Totally Free Security Awareness Content"
     url: /securityawareness
     description: Totally Free Security Awareness Content
-htb-writeups:
-  - title: "Easy"
-    children:
-      - title: "Jerry [Windows] (Easy)"
-        url: /htb-jerry
-      - title: "Blue [Windows]"
-        url: /
-      - title: "Grandpa [Windows]"
-        url: /
-  - title: "Medium"
-    children:
-      - title: "TBD"
-        url: /
-  - title: "Hard"
-    children:
-      - title: "TBD"
-        url: /
