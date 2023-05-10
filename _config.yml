@@ -286,7 +286,7 @@ collections:
   securityawareness:
     output: true
     permalink: /:collection/:path/
-  hackthebox:
+  CVEs:
     output: true
     permalink: /:collection/:path/
 
@@ -315,10 +315,10 @@ defaults:
       comments: # true
       share: true
       related: true
-# _hackthebox
+# _CVEs
   - scope:
       path: ""
-      type: hackthebox
+      type: CVEs
     values:
       layout: single
       author_profile: true
