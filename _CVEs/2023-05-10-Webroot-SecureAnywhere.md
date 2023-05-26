@@ -11,6 +11,3 @@ taxonomy: CVEs
 
 ## CVE-2023-29819
 (CVE-2023-29819) CWE-284 - Improper Access Control: An issue found in Webroot SecureAnywhere Endpoint Protection CE 23.1 v.9.0.33.39 and before allows a local attacker to bypass protections via a crafted payload. A local attacker, as a non-administrator, can read the registry containing the default allowlist.
-
-## CVE-2023-29820
-(CVE-2023-29820) CWE-693 - Protection Mechanism Failure: An issue found in Webroot SecureAnywhere Endpoint Protection CE 23.1 v.9.0.33.39 (EXE install) and before allows a local attacker to bypass protections via a crafted payload. A local attackers could uninstall the product from a managed state, while tamper protection is enabled, using the local SYSTEM account.
