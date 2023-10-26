@@ -115,9 +115,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "Website"
+    - label: "Subscribe for exclusive hacker content"
       icon: "fas fa-fw fa-link"
-      # url: "https://spenceralessi.com"
+      url: "https://spenceralessi.ck.page"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/techspence"
@@ -152,6 +152,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/spenceralessi"
+    - label: "Subscribe for exclusive hacker content"
+      icon: "fas fa-fw fa-link"
+      url: "https://spenceralessi.ck.page"
 
 
 # Reading Files
