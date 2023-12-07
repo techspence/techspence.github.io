@@ -115,7 +115,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "Subscribe for exclusive hacker content"
+    - label: "A newsletter for pentesters"
       icon: "fas fa-fw fa-link"
       url: "https://spenceralessi.ck.page/email"
     - label: "Twitter"
@@ -152,7 +152,7 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/spenceralessi"
-    - label: "Subscribe for exclusive hacker content"
+    - label: "A newsletter for pentesters"
       icon: "fas fa-fw fa-link"
       url: "https://spenceralessi.ck.page/email"
 
