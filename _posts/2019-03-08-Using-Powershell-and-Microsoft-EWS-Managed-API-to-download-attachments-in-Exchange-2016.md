@@ -84,7 +84,7 @@ As you can see there are some splitting of attachment names and some hackery to 
 
 ## Using the Exchange EWS API
 
-Now that i've explained what the functions do, we can move on to explaining the Exchange EWS API. To learn more about it, see [Download the Microsoft Exchange Web Services Managed API 2.2 from](http://www.microsoft.com/en-us/download/details.aspx?id=42951).
+Now that i've explained what the functions do, we can move on to explaining the Exchange EWS API. To learn more about it, see [Download the Microsoft Exchange Web Services Managed API 2.2 from](https://web.archive.org/web/20200804152159/http://www.microsoft.com/en-us/download/confirmation.aspx?id=42951).
 
 
 **Download and Install the EWS Managed API**
