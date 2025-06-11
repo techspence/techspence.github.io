@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "spenceralessi.com"
 title_separator          : "-"
 name                     : "Spencer Alessi"
-description              : "hacker | pentester | researcher | active directory connoisseur | wiz-bang exploit slinger hiding in the shadows | Live now, be yourself, remember death 🛹🏂👨🏼‍💻🎮❄️🏔📷"
+description              : "🛡️Empowering defenders & dismantling threats | Ethical Threat | pentester https://securit360.com | host https://offsec.blog| SWAG https://swag.ethicalthreat.com"
 url                      : "https://techspence.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "techspence/techspence.github.io"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Spencer Alessi"
   avatar           : "/assets/img/logo.png"
-  bio              : "hacker | pentester | researcher | active directory connoisseur | wiz-bang exploit slinger hiding in the shadows | Live now, be yourself, remember death 🛹🏂👨🏼‍💻🎮❄️🏔📷"
+  bio              : "🛡️Empowering defenders & dismantling threats | Ethical Threat | pentester https://securit360.com | host https://offsec.blog| SWAG https://swag.ethicalthreat.com"
   location         : "Bob Ross Mountain Range"
   #email            : ""
   links:
