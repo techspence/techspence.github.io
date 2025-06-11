@@ -119,7 +119,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://spenceralessi.ck.page/email"
     - label: "Twitter"
-      icon: "fa-brands fa-x-twitter"
+      icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/techspence"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
@@ -135,7 +135,7 @@ author:
 footer:
   links:
     - label: "Twitter"
-      icon: "fa-brands fa-x-twitter"
+      icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/techspence"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
