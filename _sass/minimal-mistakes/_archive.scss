@@ -216,6 +216,23 @@
   @include clearfix();
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+
+  @include breakpoint($small) {
+    gap: 1.5rem;
+  }
+
+  @include breakpoint($medium) {
+    gap: 2rem;
+  }
+
+  @include breakpoint($large) {
+    gap: 2.5rem;
+    justify-content: center;
+  }
 
   .archive__item-title {
     margin-bottom: 0;
@@ -224,30 +241,33 @@
 
 .feature__item {
   position: relative;
-  margin-bottom: 2em;
   font-size: 1.125em;
 
+  // Mobile-first responsive approach using flexbox
+  width: 100%;
+  
   @include breakpoint($small) {
-    float: left;
-    margin-bottom: 0;
-    width: span(4 of 12);
+    width: calc(50% - 0.5rem);
+  }
+  
+  @include breakpoint($medium) {
+    width: calc(33.333% - 1rem);
+  }
+  
+  @include breakpoint($large) {
+    width: 33.333%;
+    min-width: 300px;
+    flex-shrink: 0;
+  }
+  
+  @include breakpoint($x-large) {
+    width: 33.333%;
+    min-width: 350px;
+    flex-shrink: 0;
+  }
 
-    &:nth-child(3n + 1) {
-      clear: both;
-      margin-left: 0;
-    }
-
-    &:nth-child(3n + 2) {
-      clear: none;
-      margin-left: gutter(of 12);
-    }
-
-    &:nth-child(3n + 3) {
-      clear: none;
-      margin-left: gutter(of 12);
-    }
-
-    .feature__item-teaser {
+  .feature__item-teaser {
+    @include breakpoint($small) {
       max-height: 200px;
       overflow: hidden;
     }

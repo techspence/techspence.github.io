@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -19,13 +19,13 @@ locale                   : "en-US"
 title                    : "spenceralessi.com"
 title_separator          : "-"
 name                     : "Spencer Alessi"
-description              : "🛡️Empowering defenders & dismantling threats | Ethical Threat | pentester https://securit360.com | host https://offsec.blog| SWAG https://swag.ethicalthreat.com"
+description              : "EthicalThreat | Sr. Pentester @SecurIT360"
 url                      : "https://techspence.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "techspence/techspence.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # "/assets/img/logo.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/img/etsignature-transparent.png"
+masthead_title           : "spenceralessi.com" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -108,16 +108,16 @@ analytics:
 author:
   name             : "Spencer Alessi"
   avatar           : "/assets/img/logo.png"
-  bio              : "🛡️Empowering defenders & dismantling threats | Ethical Threat | pentester https://securit360.com | host https://offsec.blog| SWAG https://swag.ethicalthreat.com"
-  location         : "Bob Ross Mountain Range"
+  bio              : "EthicalThreat | Sr. Pentester @SecurIT360"
+  # location         : "Bob Ross Mountain Range"
   #email            : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "A newsletter for pentesters"
-      icon: "fas fa-fw fa-link"
-      url: "https://spenceralessi.ck.page/email"
+    - label: "Free Cyber Defense Tips"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "https://go.spenceralessi.com/newsletter"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/techspence"
@@ -237,6 +237,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:

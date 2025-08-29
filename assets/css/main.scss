@@ -20,3 +20,306 @@ html {
 .archive__item-excerpt {
     font-size: 0.85em;
 }
+
+// Custom styles for better centering of feature sections
+.feature__wrapper {
+  max-width: 1400px;
+  margin: 0 auto 2em auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  
+  @include breakpoint($medium) {
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+  
+  @include breakpoint($large) {
+    padding: 0 2rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  @include breakpoint($x-large) {
+    max-width: 1600px;
+    padding: 0 3rem;
+    gap: 2.5rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.feature__item {
+  text-align: center;
+  
+  // Mobile-first responsive grid using flexbox
+  width: 100%;
+  
+  @include breakpoint($small) {
+    width: calc(50% - 0.5rem);
+  }
+  
+  @include breakpoint($medium) {
+    width: calc(33.333% - 1rem);
+  }
+  
+  @include breakpoint($large) {
+    width: 33.333%;
+    min-width: 300px;
+    flex-shrink: 0;
+  }
+  
+  @include breakpoint($x-large) {
+    width: 33.333%;
+    min-width: 350px;
+    flex-shrink: 0;
+  }
+  
+  .archive__item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+  }
+  
+  .archive__item-teaser {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  
+  .archive__item-body {
+    padding: 1.5rem 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    @include breakpoint($medium) {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  .archive__item-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    
+    @include breakpoint($medium) {
+      font-size: 1.5rem;
+    }
+    
+    @include breakpoint($large) {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .archive__item-excerpt {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: $text-color;
+    
+    @include breakpoint($medium) {
+      font-size: 1rem;
+    }
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    align-self: center;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+  }
+  
+  // Responsive variants
+  &--left {
+    @include breakpoint($small) {
+      width: 100%;
+      margin-right: 0;
+      
+      .archive__item {
+        flex-direction: row;
+        text-align: left;
+      }
+      
+      .archive__item-teaser {
+        width: 40%;
+        border-radius: 8px 0 0 8px;
+      }
+      
+      .archive__item-body {
+        width: 60%;
+        padding-left: 2rem;
+      }
+    }
+  }
+  
+  &--right {
+    @include breakpoint($small) {
+      width: 100%;
+      margin-right: 0;
+      
+      .archive__item {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+      
+      .archive__item-teaser {
+        width: 40%;
+        border-radius: 0 8px 8px 0;
+      }
+      
+      .archive__item-body {
+        width: 60%;
+        padding-right: 2rem;
+      }
+    }
+  }
+  
+  &--center {
+    @include breakpoint($small) {
+      width: 100%;
+      margin-right: 0;
+      
+      .archive__item-teaser {
+        max-width: 400px;
+        margin: 0 auto 1.5rem auto;
+      }
+      
+      .archive__item-body {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// Improve spacing around the feature sections
+.home .feature__wrapper {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+// Custom styles for the site logo
+  .site-logo {
+    img {
+      width: 280px;
+      height: auto;
+      object-fit: contain;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    // Reduce right margin to bring title closer
+    margin-right: 0.2rem !important;
+    
+    // Larger on bigger screens
+    @include breakpoint($medium) {
+      img {
+        width: 350px;
+      }
+      margin-right: 0.3rem !important;
+    }
+    
+    @include breakpoint($large) {
+      img {
+        width: 420px;
+      }
+      margin-right: 0.4rem !important;
+    }
+  }
+
+// Custom styles for the site title next to logo
+.custom-site-title {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  color: $primary-color !important;
+  margin-left: 0.02rem !important; // Further reduced to bring text even closer
+  text-decoration: none !important;
+  
+  &:hover {
+    color: $primary-color !important;
+    text-decoration: none !important;
+  }
+  
+  // Responsive sizing
+  @include breakpoint($medium) {
+    font-size: 1.1rem !important;
+    margin-left: 0.03rem !important; // Further reduced
+  }
+  
+  @include breakpoint($large) {
+    font-size: 1.3rem !important;
+    margin-left: 0.05rem !important; // Further reduced
+  }
+}
+
+// Additional styling to make logo and title appear as a cohesive unit
+.greedy-nav {
+  .site-logo + .custom-site-title {
+    // Remove any default margins that might be added by the theme
+    margin-left: -2rem !important;
+  }
+  
+  // Ensure the logo and title are treated as a unit
+  .site-logo {
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+}
+
+// New wrapper for logo and title group
+.logo-title-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.05rem !important; // Even tighter spacing - adjust this value as needed
+  
+  @include breakpoint($medium) {
+    gap: 0.08rem !important;
+  }
+  
+  @include breakpoint($large) {
+    gap: 0.1rem !important;
+  }
+  
+  // Remove default margins from children
+  .site-logo {
+    margin-right: 0 !important;
+  }
+  
+  .custom-site-title {
+    margin-left: 0 !important;
+  }
+}

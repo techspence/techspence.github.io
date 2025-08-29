@@ -1,8 +1,14 @@
 # main links
 main:
+  - title: "Content"
+    url: /content/
+    description: Explore all content types
+  - title: "Tools"
+    url: /tools/
+    description: Tools I build and contribute to
+  - title: "SWAG"
+    url: https://swag.ethicalthreat.com
+    description: Support the mission
   - title: "Spencer's CVEs"
     url: /CVEs
     description: Check out my CVEs
-  - title: "Totally Free Security Awareness Content"
-    url: /securityawareness
-    description: Totally Free Security Awareness Content

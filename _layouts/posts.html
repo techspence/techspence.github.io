@@ -4,3 +4,7 @@ layout: archive
 
 {{ content }}
 
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
