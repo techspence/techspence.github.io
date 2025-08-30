@@ -41,11 +41,10 @@
               {{ f.excerpt | markdownify }}
             </div>
           {% endif %}
-
-          
         </div>
       </div>
     </div>
+
   {% endfor %}
 
 </div> 

@@ -1,5 +1,8 @@
 # main links
 main:
+  - title: "Courses"
+    url: /courses/
+    description: Spencer's courses
   - title: "Content"
     url: /content/
     description: Explore all content types
