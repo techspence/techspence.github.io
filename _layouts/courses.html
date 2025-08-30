@@ -1,0 +1,539 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  <div class="courses-wrapper">
+    <div class="courses-container">
+    <!-- Left Column - Reserved for future use -->
+    <div class="courses-left-column">
+      <!-- Future content will go here -->
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="courses-content">
+      <div class="video-container">
+        <iframe 
+          width="100%" 
+          height="100%" 
+          src="https://www.youtube.com/embed/s1mOHzQ_uLo?si=CrG_lo5ZbsA_6a9k" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Opt-in Form Sidebar -->
+    <div class="courses-sidebar">
+      <div class="opt-in-form">
+        <div class="form-header">
+          <h3>Stay Updated</h3>
+          <p>Get notified when new courses are released and receive exclusive cybersecurity tips.</p>
+        </div>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="interests">Areas of Interest</label>
+            <select id="interests" name="interests">
+              <option value="">Select your interests</option>
+              <option value="penetration-testing">Penetration Testing</option>
+              <option value="web-security">Web Application Security</option>
+              <option value="network-security">Network Security</option>
+              <option value="malware-analysis">Malware Analysis</option>
+              <option value="incident-response">Incident Response</option>
+            </select>
+          </div>
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="newsletter" checked>
+              <span class="checkmark"></span>
+              Subscribe to weekly cybersecurity newsletter
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fas fa-paper-plane"></i>
+            Subscribe Now
+          </button>
+        </form>
+        <div class="form-footer">
+          <p><small>🔒 Your information is secure and will never be shared with third parties.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+#main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.courses-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: 300px 1fr 350px;
+  gap: 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: calc(100vh - 200px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Left Column - Reserved for future use */
+.courses-left-column {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-style: italic;
+  min-height: 200px;
+}
+
+
+
+/* Main Content Styles */
+.courses-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Limit maximum width */
+  margin: -1rem auto; /* Center the video */
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 45%; /* Reduced from 56.25% to crop top/bottom */
+}
+
+.video-container iframe {
+  border: none;
+  border-radius: 8px;
+  width: 95%;
+  height: 54%; /* Increase height to compensate for the crop */
+}
+
+/* Sidebar Styles */
+.courses-sidebar {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.opt-in-form {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.form-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.form-header p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.form-group {
+  margin-bottom: 0.875rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.375rem;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
+}
+
+.checkbox-group {
+  margin-bottom: 1.25rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.1rem;
+}
+
+.btn--full {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn--full:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+}
+
+.form-footer {
+  margin-top: 0.875rem;
+  text-align: center;
+}
+
+.form-footer p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .courses-container {
+    grid-template-columns: 280px 1fr 320px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .courses-container {
+    grid-template-columns: 260px 1fr 300px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .courses-container {
+    grid-template-columns: 240px 1fr 280px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .courses-container {
+    grid-template-columns: 220px 1fr 280px;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .courses-left-column,
+  .courses-sidebar {
+    padding: 1rem;
+  }
+  
+  .courses-content {
+    padding: 0.75rem;
+  }
+  
+  .video-container {
+    max-width: 600px; /* Smaller max-width for medium screens */
+  }
+  
+  .opt-in-form {
+    padding: 1rem;
+  }
+  
+  .form-header h3 {
+    font-size: 1rem;
+  }
+  
+  .form-header p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .courses-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .courses-left-column,
+  .courses-sidebar {
+    position: static;
+    order: 2;
+  }
+  
+  .courses-content {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-container {
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+  
+  .courses-left-column,
+  .courses-sidebar {
+    padding: 1rem;
+  }
+  
+  .courses-content {
+    padding: 0.5rem;
+  }
+  
+  .video-container {
+    max-width: 100%; /* Full width on mobile */
+    margin: 0; /* Remove centering on mobile */
+  }
+  
+  .opt-in-form {
+    padding: 0.875rem;
+  }
+  
+  .form-header h3 {
+    font-size: 1rem;
+  }
+  
+  .form-header p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .courses-container {
+    padding: 0.5rem;
+    gap: 0.75rem;
+  }
+  
+  .courses-left-column,
+  .courses-sidebar {
+    padding: 0.75rem;
+  }
+  
+  .opt-in-form {
+    padding: 0.75rem;
+  }
+  
+  .form-header {
+    margin-bottom: 1rem;
+  }
+  
+  .form-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .form-header p {
+    font-size: 0.8rem;
+  }
+  
+  .form-group {
+    margin-bottom: 0.75rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.625rem;
+    font-size: 0.85rem;
+  }
+  
+  .form-group label {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .checkbox-label {
+    font-size: 0.8rem;
+  }
+  
+  .btn--full {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-container {
+    padding: 0.25rem;
+    gap: 0.5rem;
+  }
+  
+  .courses-left-column,
+  .courses-sidebar {
+    padding: 0.5rem;
+  }
+  
+  .opt-in-form {
+    padding: 0.5rem;
+  }
+  
+  .form-header h3 {
+    font-size: 1rem;
+  }
+  
+  .form-header p {
+    font-size: 0.75rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .form-group label {
+    font-size: 0.8rem;
+  }
+  
+  .checkbox-label {
+    font-size: 0.75rem;
+  }
+  
+  .btn--full {
+    padding: 0.625rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .courses-container {
+    grid-template-columns: 200px 1fr 250px;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .courses-left-column,
+  .courses-sidebar {
+    position: static;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .course-thumbnail img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .course-item,
+  .btn--full {
+    transition: none;
+  }
+  
+  .course-item:hover {
+    transform: none;
+  }
+  
+  .btn--full:hover {
+    transform: none;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Form submission
+  const form = document.querySelector('.newsletter-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    
+    // Show success message (you can replace this with actual form submission)
+    alert(`Thank you ${name}! You've been subscribed to our newsletter. We'll send updates to ${email}.`);
+    
+    // Reset form
+    form.reset();
+  });
+});
+</script> 
