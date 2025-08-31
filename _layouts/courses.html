@@ -15,69 +15,150 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
-  <div class="courses-wrapper">
-    <div class="courses-container">
-    <!-- Left Column - Reserved for future use -->
-    <div class="courses-left-column">
-      <!-- Future content will go here -->
-    </div>
-
-    <!-- Main Content Area -->
-    <div class="courses-content">
-      <div class="video-container">
-        <iframe 
-          width="100%" 
-          height="100%" 
-          src="https://www.youtube.com/embed/s1mOHzQ_uLo?si=CrG_lo5ZbsA_6a9k" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
+  <div class="courses-landing-wrapper">
+    <!-- Header Section -->
+    <div class="courses-header">
+      <div class="container">
+        <h1 class="main-title">
+          <span class="highlight">FREE</span> CYBERSECURITY TRAINING
+        </h1>
+        <h4 class="subtitle">
+          Videos, eBooks, Guides, Templates, Downloads & more to help you succeed:
+        </h4>
       </div>
     </div>
 
-    <!-- Opt-in Form Sidebar -->
-    <div class="courses-sidebar">
-      <div class="opt-in-form">
-        <div class="form-header">
-          <h3>Stay Updated</h3>
-          <p>Get notified when new courses are released and receive exclusive cybersecurity tips.</p>
+    <!-- Featured Course Section -->
+    <div class="featured-course-section">
+      <div class="container">
+        <div class="featured-course-wrapper">
+          <div class="featured-course-badge">BRAND NEW</div>
+          <div class="featured-course-main">
+            <div class="featured-course-left">
+              <img src="/assets/img/activedirectory-course.png" alt="Active Directory Security Course">
+            </div>
+            <div class="featured-course-right">
+              <div class="featured-course-heading">Active Directory Security Mastery</div>
+              <div class="featured-course-cta">
+                <a href="/courses/adpermissions/">Get My Free Security Course</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <form class="newsletter-form">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required>
+      </div>
+    </div>
+
+    <!-- Course Grid Section -->
+    <div class="course-grid-section">
+      <div class="container">
+        <div class="training-wrap">
+          <div class="training-inner cm-col-wrap">
+            
+            <!-- Active Directory Course -->
+            <div class="training-col cm-col">
+              <div class="cm-col-inner">
+                <a href="/courses/adpermissions/">
+                  <figure>
+                    <img src="/assets/img/activedirectory-course.png" alt="Active Directory Security">
+                  </figure>
+                </a>
+                <span class="sub-heading-group">
+                  <span class="sub-heading-button">It's Free</span>
+                </span>
+                <div class="training-title">
+                  <h2><span>ACTIVE DIRECTORY SECURITY</span></h2>
+                </div>
+                <div class="training-btn">
+                  <a class="cm-training-btn" href="/courses/adpermissions/">
+                    <span class="main-heading-group">
+                      <span class="button-icon-start"></span>
+                      <span class="main-heading-button">Take This Course</span>
+                      <span class="button-icon-end"></span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Security Course -->
+            <div class="training-col cm-col">
+              <div class="cm-col-inner">
+                <a href="#">
+                  <figure>
+                    <img src="/assets/img/web-security-course.png" alt="Web Application Security">
+                  </figure>
+                </a>
+                <span class="sub-heading-group">
+                  <span class="sub-heading-button">Coming Soon</span>
+                </span>
+                <div class="training-title">
+                  <h2><span>WEB APPLICATION SECURITY</span></h2>
+                </div>
+                <div class="training-btn">
+                  <a class="cm-training-btn" href="#">
+                    <span class="main-heading-group">
+                      <span class="button-icon-start"></span>
+                      <span class="main-heading-button">Take This Course</span>
+                      <span class="button-icon-end"></span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <div class="container">
+        <div class="accordion-wrapper">
+          <div class="accordion-inner">
+            <h2>FAQs</h2>
+            <p class="accordion-btn">What cybersecurity skills will I learn from these courses?</p>
+            <div class="accordion-panel">
+              <p>Our courses cover essential cybersecurity skills including penetration testing, web application security, network security, Active Directory exploitation, and malware analysis. Each course is designed to provide hands-on, practical knowledge that you can apply immediately in real-world scenarios.</p>
+            </div>
+            
+            <p class="accordion-btn">Are these courses suitable for beginners?</p>
+            <div class="accordion-panel">
+              <p>Yes! We offer courses at various skill levels. Some courses are designed for complete beginners, while others are intermediate to advanced. Each course description clearly indicates the required skill level and prerequisites.</p>
+            </div>
+            
+            <p class="accordion-btn">Do I need special equipment or software?</p>
+            <div class="accordion-panel">
+              <p>Most courses can be completed with a standard computer and internet connection. We'll provide guidance on any free tools or software you'll need. For hands-on labs, we'll guide you through setting up safe testing environments.</p>
+            </div>
+            
+            <p class="accordion-btn">Are these courses really free?</p>
+            <div class="accordion-panel">
+              <p>Yes, all our current courses are completely free! We believe cybersecurity education should be accessible to everyone. We may offer premium courses in the future, but we'll always maintain a selection of free courses.</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="interests">Areas of Interest</label>
-            <select id="interests" name="interests">
-              <option value="">Select your interests</option>
-              <option value="penetration-testing">Penetration Testing</option>
-              <option value="web-security">Web Application Security</option>
-              <option value="network-security">Network Security</option>
-              <option value="malware-analysis">Malware Analysis</option>
-              <option value="incident-response">Incident Response</option>
-            </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+      <div class="container">
+        <div class="cta-wrapper">
+          <div class="cta-content">
+            <h2 class="cta-title">DO YOU WANT TO MASTER CYBERSECURITY?</h2>
+            <p class="cta-subtitle">Join thousands of students learning real-world security skills</p>
           </div>
-          <div class="form-group checkbox-group">
-            <label class="checkbox-label">
-              <input type="checkbox" name="newsletter" checked>
-              <span class="checkmark"></span>
-              Subscribe to weekly cybersecurity newsletter
-            </label>
+          <div class="cta-buttons">
+            <div class="cta-primary">
+              <a href="/courses/adpermissions/">Yes, I Want To Learn Security</a>
+            </div>
+            <div class="cta-secondary">
+              <a href="/newsletter">No Thanks, Just Keep Me Updated</a>
+            </div>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">
-            <i class="fas fa-paper-plane"></i>
-            Subscribe Now
-          </button>
-        </form>
-        <div class="form-footer">
         </div>
       </div>
     </div>
@@ -93,7 +174,7 @@ layout: default
   box-sizing: border-box;
 }
 
-.courses-wrapper {
+.courses-landing-wrapper {
   width: 100%;
   max-width: 100%;
   margin: 0;
@@ -101,432 +182,507 @@ layout: default
   box-sizing: border-box;
 }
 
-.courses-container {
-  display: grid;
-  grid-template-columns: 300px 1fr 400px;
-  gap: 1rem;
-  max-width: 1800px;
+.container {
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 1.5rem;
-  min-height: calc(100vh - 200px);
-  width: 100%;
-  box-sizing: border-box;
+  padding: 0 15px;
 }
 
-/* Left Column - Reserved for future use */
-.courses-left-column {
-  background: #f8f9fa;
-  border-radius: 12px;
-  padding: 1.5rem 10rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  height: fit-content;
-  position: sticky;
-  top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6c757d;
-  font-style: italic;
-  min-height: 200px;
-}
-
-
-
-/* Main Content Styles */
-.courses-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Limit maximum width */
-  margin: -1rem auto; /* Center the video */
-  border-radius: 8px;
-  overflow: hidden;
-  padding-bottom: 45%; /* Reduced from 56.25% to crop top/bottom */
-}
-
-.video-container iframe {
-  border: none;
-  border-radius: 8px;
-  width: 95%;
-  height: 54%; /* Increase height to compensate for the crop */
-}
-
-/* Sidebar Styles */
-.courses-sidebar {
-  height: fit-content;
-  position: sticky;
-  margin: -1rem auto;
-}
-
-.opt-in-form {
-  background: white;
-  padding: 1.25rem;
-}
-
-.form-header {
+/* Header Section */
+.courses-header {
+  padding: 90px 0 5px;
+  background: #fff;
   text-align: center;
-  margin-bottom: 1.25rem;
 }
 
-.form-header h3 {
-  margin: 0 0 0.5rem 0;
-  color: #2c3e50;
-  font-size: 1.1rem;
-  font-weight: 600;
+.main-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #131628;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
 }
 
-.form-header p {
-  margin: 0;
+.main-title .highlight {
+  color: #6f00ff;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 18px;
   color: #6c757d;
-  font-size: 0.85rem;
-  line-height: 1.4;
+  margin: 0;
+  line-height: 1.5;
 }
 
-.form-group {
-  margin-bottom: 0.875rem;
+/* Featured Course Section */
+.featured-course-section {
+  padding: 0;
+  background: #fff;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.375rem;
-  color: #2c3e50;
-  font-weight: 500;
-  font-size: 0.85rem;
+.featured-course-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.05);
+  padding: 32px;
 }
 
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 0.625rem;
-  border: 1px solid #e9ecef;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  transition: border-color 0.3s ease;
+.featured-course-badge {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  border-radius: 8px 0px 0px 8px;
+  background: #F1283A;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
 }
 
-.form-group input:focus,
-.form-group select:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
-}
-
-.checkbox-group {
-  margin-bottom: 1.25rem;
-}
-
-.checkbox-label {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-  cursor: pointer;
-  font-size: 0.8rem;
-  line-height: 1.4;
-}
-
-.checkbox-label input[type="checkbox"] {
-  width: auto;
-  margin-top: 0.1rem;
-}
-
-.btn--full {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 0.9rem;
-  font-weight: 600;
+.featured-course-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+}
+
+.featured-course-left {
+  width: 60%;
+}
+
+.featured-course-left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.featured-course-right {
+  width: 40%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.featured-course-heading {
+  color: #000;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.featured-course-cta a {
+  border-radius: 223.664px;
+  background: rgb(179, 8, 12) !important;
+  padding: 16px;
+  color: rgb(239, 232, 2) !important;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+  display: block;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.btn--full:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+.featured-course-cta a:hover {
+  background: rgb(150, 7, 10) !important;
+  transform: translateY(-2px);
 }
 
-.form-footer {
-  margin-top: 0.875rem;
+/* Course Grid Section */
+.course-grid-section {
+  padding: 74px 0;
+  background: #FAFAFA;
+}
+
+.training-wrap {
+  max-width: 1346px;
+  margin: 0 auto;
+}
+
+.training-inner.cm-col-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.training-col {
+  position: relative;
+}
+
+.training-col .cm-col-inner .training-title,
+.training-col .cm-col-inner .training-btn {
+  order: 1;
+}
+
+.training-title {
+  margin: 0 0 24px !important;
   text-align: center;
 }
 
-.form-footer p {
+.training-title h2 {
+  font-size: 20px;
   margin: 0;
+}
+
+.training-title h2 span {
+  font-size: 20px !important;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #131628;
+}
+
+.training-col figure {
+  padding: 11%;
+  margin-bottom: -10px;
+}
+
+.training-col figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.training-btn {
+  text-align: center;
+  position: relative;
+}
+
+.cm-training-btn {
+  display: inline-block;
+  background: rgb(179, 8, 12) !important;
+  color: rgb(239, 232, 2) !important;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.cm-training-btn:hover {
+  background: rgb(150, 7, 10);
+  transform: translateY(-2px);
+}
+
+.sub-heading-group {
+  position: absolute;
+  top: 15px;
+  background: #F44336;
+  min-width: 72px;
+  padding: 2px 8px;
+  border-radius: 9px 0 0 8px;
+  right: 0;
+  z-index: 10;
+}
+
+.sub-heading-button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 74px 0;
+  background: #FAFAFA;
+}
+
+.accordion-wrapper {
+  background: #fff;
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.accordion-inner h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  margin: 0 0 25px !important;
+  text-align: center;
+  color: #131628;
+}
+
+.accordion-btn {
+  border-bottom: 1px dashed #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 24px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5;
+  cursor: pointer;
+  position: relative;
+  margin: 0 0 21px !important;
+  font-weight: bold;
+  color: #131628;
+}
+
+.accordion-panel {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s ease-out;
+}
+
+.accordion-btn:after {
+  content: "";
+  height: 8px;
+  bottom: calc(50% - 4px);
+  position: absolute;
+  right: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"><path d="M1 1l5.5 5.5L12 1" stroke="%23666" stroke-width="2" fill="none"/></svg>');
+  width: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.accordion-btn.active:after {
+  transform: scaleY(-1);
+}
+
+.accordion-panel p {
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 21px !important;
   color: #6c757d;
-  font-size: 0.75rem;
+}
+
+.accordion-panel p a {
+  color: #6f00ff;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 74px 0;
+  background: #f6f6f6;
+}
+
+.cta-wrapper {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  color: #131628;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 0 0 40px 0;
+  line-height: 1.5;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary a,
+.cta-secondary a {
+  background: rgb(179, 8, 12) !important;
+  border-radius: 50px;
+  color: rgb(239, 232, 2) !important;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2.5px solid rgb(179, 8, 12);
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.cta-primary a:hover {
+  background: #ffffff !important;
+  color: rgb(179, 8, 12) !important;
+}
+
+.cta-secondary a {
+  background: #ffffff;
+  color: #6F00FF;
+}
+
+.cta-secondary a:hover {
+  background: rgb(179, 8, 12) !important;
+  color: rgb(239, 232, 2) !important;
 }
 
 /* Responsive Design */
-@media (max-width: 1600px) {
-  .courses-container {
-    grid-template-columns: 280px 1fr 320px;
-    gap: 1.5rem;
-    padding: 1.5rem;
+@media (max-width: 991px) {
+  .featured-course-main {
+    flex-direction: column;
+  }
+
+  .featured-course-inner {
+    padding: 40px 20px 20px;
+  }
+
+  .featured-course-left {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .featured-course-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .featured-course-heading {
+    font-size: 20px;
+  }
+
+  .featured-course-cta a {
+    max-width: 100%;
+  }
+
+  .featured-course-badge {
+    top: 0;
   }
 }
 
-@media (max-width: 1400px) {
-  .courses-container {
-    grid-template-columns: 260px 1fr 300px;
-    gap: 1.5rem;
-    padding: 1.5rem;
+@media (max-width: 767px) {
+  .courses-header {
+    padding: 50px 0 20px;
   }
-}
 
-@media (max-width: 1200px) {
-  .courses-container {
-    grid-template-columns: 240px 1fr 280px;
-    gap: 1.5rem;
-    padding: 1.5rem;
+  .main-title {
+    font-size: 36px;
   }
-}
 
-@media (max-width: 1024px) {
-  .courses-container {
-    grid-template-columns: 220px 1fr 280px;
-    gap: 1rem;
-    padding: 1rem;
+  .subtitle {
+    font-size: 16px;
   }
-  
-  .courses-left-column,
-  .courses-sidebar {
-    padding: 1rem;
-  }
-  
-  .courses-content {
-    padding: 0.75rem;
-  }
-  
-  .video-container {
-    max-width: 600px; /* Smaller max-width for medium screens */
-  }
-  
-  .opt-in-form {
-    padding: 1rem;
-  }
-  
-  .form-header h3 {
-    font-size: 1rem;
-  }
-  
-  .form-header p {
-    font-size: 0.8rem;
-  }
-}
 
-@media (max-width: 992px) {
-  .courses-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1rem;
+  .accordion-wrapper {
+    padding: 25px 0;
   }
-  
-  .courses-left-column,
-  .courses-sidebar {
-    position: static;
-    order: 2;
-  }
-  
-  .courses-content {
-    order: 1;
-  }
-}
 
-@media (max-width: 768px) {
-  .courses-container {
-    padding: 0.75rem;
-    gap: 1rem;
+  .accordion-btn {
+    font-size: 20px;
+    line-height: 33px;
+    margin: 0 0 15px !important;
   }
-  
-  .courses-left-column,
-  .courses-sidebar {
-    padding: 1rem;
+
+  .training-inner.cm-col-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  
-  .courses-content {
-    padding: 0.5rem;
+
+  .training-title {
+    margin: 0 0 16px !important;
   }
-  
-  .video-container {
-    max-width: 100%; /* Full width on mobile */
-    margin: 0; /* Remove centering on mobile */
+
+  .training-title h2 span {
+    font-size: 18px !important;
   }
-  
-  .opt-in-form {
-    padding: 0.875rem;
+
+  .cm-training-btn {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 13px 20px;
   }
-  
-  .form-header h3 {
-    font-size: 1rem;
+
+  .sub-heading-group {
+    right: 10px;
   }
-  
-  .form-header p {
-    font-size: 0.8rem;
+
+  .sub-heading-button {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-primary a,
+  .cta-secondary a {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
 @media (max-width: 576px) {
-  .courses-container {
-    padding: 0.5rem;
-    gap: 0.75rem;
+  .main-title {
+    font-size: 28px;
   }
-  
-  .courses-left-column,
-  .courses-sidebar {
-    padding: 0.75rem;
-  }
-  
-  .opt-in-form {
-    padding: 0.75rem;
-  }
-  
-  .form-header {
-    margin-bottom: 1rem;
-  }
-  
-  .form-header h3 {
-    font-size: 1.1rem;
-  }
-  
-  .form-header p {
-    font-size: 0.8rem;
-  }
-  
-  .form-group {
-    margin-bottom: 0.75rem;
-  }
-  
-  .form-group input,
-  .form-group select {
-    padding: 0.625rem;
-    font-size: 0.85rem;
-  }
-  
-  .form-group label {
-    font-size: 0.85rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .checkbox-label {
-    font-size: 0.8rem;
-  }
-  
-  .btn--full {
-    padding: 0.75rem;
-    font-size: 0.9rem;
-  }
-  
-  .form-footer p {
-    font-size: 0.75rem;
-  }
-}
 
-@media (max-width: 480px) {
-  .courses-container {
-    padding: 0.25rem;
-    gap: 0.5rem;
+  .training-inner.cm-col-wrap {
+    grid-template-columns: 1fr;
   }
-  
-  .courses-left-column,
-  .courses-sidebar {
-    padding: 0.5rem;
-  }
-  
-  .opt-in-form {
-    padding: 0.5rem;
-  }
-  
-  .form-header h3 {
-    font-size: 1rem;
-  }
-  
-  .form-header p {
-    font-size: 0.75rem;
-  }
-  
-  .form-group input,
-  .form-group select {
-    padding: 0.5rem;
-    font-size: 0.8rem;
-  }
-  
-  .form-group label {
-    font-size: 0.8rem;
-  }
-  
-  .checkbox-label {
-    font-size: 0.75rem;
-  }
-  
-  .btn--full {
-    padding: 0.625rem;
-    font-size: 0.85rem;
-  }
-}
 
-/* Landscape orientation adjustments for mobile */
-@media (max-width: 768px) and (orientation: landscape) {
-  .courses-container {
-    grid-template-columns: 200px 1fr 250px;
-    gap: 1rem;
-    padding: 1rem;
+  .training-title h2 span {
+    font-size: 16px !important;
+    line-height: 24px;
   }
-  
-  .courses-left-column,
-  .courses-sidebar {
-    position: static;
-  }
-}
 
-/* High DPI displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .course-thumbnail img {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
+  .accordion-btn {
+    font-size: 18px;
+    line-height: 28px;
   }
-}
 
-/* Reduced motion for accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .course-item,
-  .btn--full {
-    transition: none;
-  }
-  
-  .course-item:hover {
-    transform: none;
-  }
-  
-  .btn--full:hover {
-    transform: none;
+  .cta-title {
+    font-size: 24px;
   }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Form submission
-  const form = document.querySelector('.newsletter-form');
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(form);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    
-    // Show success message (you can replace this with actual form submission)
-    alert(`Thank you ${name}! You've been subscribed to our newsletter. We'll send updates to ${email}.`);
-    
-    // Reset form
-    form.reset();
-  });
+  // Accordion functionality
+  var accordionBtn = document.getElementsByClassName("accordion-btn");
+  var i;
+
+  for (i = 0; i < accordionBtn.length; i++) {
+    accordionBtn[i].addEventListener("click", function () {
+      // Remove "active" class from all accordion buttons
+      for (var j = 0; j < accordionBtn.length; j++) {
+        if (accordionBtn[j] !== this) {
+          accordionBtn[j].classList.remove("active");
+          accordionBtn[j].nextElementSibling.style.maxHeight = null;
+        }
+      }
+
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
 });
 </script> 
