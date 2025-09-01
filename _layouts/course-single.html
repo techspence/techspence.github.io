@@ -75,16 +75,16 @@ layout: default
           {% if page.course_video %}
             <div class="course-video">
               <div class="video-container">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="{{ page.course_video }}" 
-                  title="Course Video" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" 
-                  allowfullscreen>
-                </iframe>
+                <div class="video-wrapper">
+                  <iframe 
+                    src="{{ page.course_video }}" 
+                    title="Course Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
               </div>
             </div>
           {% endif %}
@@ -292,11 +292,24 @@ layout: default
   width: 100%;
   border-radius: var(--course-border-radius);
   overflow: hidden;
-  aspect-ratio: 16 / 9;
+  background: var(--course-bg-secondary);
+  box-shadow: var(--course-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.video-container:hover {
+  box-shadow: var(--course-shadow-hover);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
   background: var(--course-bg-secondary);
 }
 
-.video-container iframe {
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -304,6 +317,34 @@ layout: default
   height: 100%;
   border: none;
   border-radius: var(--course-border-radius);
+}
+
+/* Modern browser support with aspect-ratio (fallback for older browsers) */
+@supports (aspect-ratio: 16 / 9) {
+  .video-wrapper {
+    aspect-ratio: 16 / 9;
+    padding-bottom: 0;
+    height: auto;
+  }
+}
+
+/* Ensure video container works on all screen sizes */
+@media (max-width: 480px) {
+  .video-container {
+    margin: 0 calc(-1 * var(--course-spacing-md));
+    border-radius: 0;
+  }
+  
+  .video-wrapper iframe {
+    border-radius: 0;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .video-container {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
 }
 
 /* Course Resources Section */
@@ -656,5 +697,32 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Handle window resize - consolidated with the new responsive handler above
+  
+  // Video container responsive handling
+  const videoContainer = document.querySelector('.video-container');
+  if (videoContainer) {
+    // Ensure video container maintains proper aspect ratio
+    const resizeVideoContainer = () => {
+      const container = videoContainer;
+      const wrapper = container.querySelector('.video-wrapper');
+      if (wrapper && wrapper.iframe) {
+        // Force reflow to ensure proper sizing
+        wrapper.style.display = 'none';
+        wrapper.offsetHeight; // Trigger reflow
+        wrapper.style.display = 'block';
+      }
+    };
+    
+    // Handle orientation changes on mobile
+    window.addEventListener('orientationchange', () => {
+      setTimeout(resizeVideoContainer, 100);
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', resizeVideoContainer);
+    
+    // Initial setup
+    resizeVideoContainer();
+  }
 });
 </script> 
