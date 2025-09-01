@@ -301,10 +301,40 @@ layout: default
   border-color: var(--course-accent);
 }
 
+.course-section-link:focus {
+  outline: 2px solid var(--course-accent);
+  outline-offset: 2px;
+  background: var(--course-bg-secondary);
+  color: var(--course-text-muted);
+  border-color: var(--course-accent);
+}
+
 .course-section-link.active {
   background: var(--course-accent);
   color: white;
   border-color: var(--course-accent);
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.course-section-link.active .section-icon {
+  color: white;
+}
+
+.section-icon.playing {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
@@ -396,6 +426,8 @@ layout: default
   margin: var(--course-spacing-lg) 0;
   margin-top: -1rem;
 }
+
+
 
 .video-header {
   display: flex;
@@ -823,9 +855,22 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentSectionIndex = 0;
   let courseSections = [];
   
+  // Get course sections from the page data
+  function getCourseSections() {
+    const sectionElements = document.querySelectorAll('.course-section-link');
+    courseSections = Array.from(sectionElements).map((element, index) => ({
+      id: element.getAttribute('data-section-id'),
+      title: element.querySelector('.section-title').textContent,
+      video: element.getAttribute('data-video'),
+      index: index
+    }));
+  }
   
   // Initialize course functionality
   function initializeCourse() {
+    // Get course sections from the DOM
+    getCourseSections();
+    
     if (courseSections.length === 0) return;
     
     // Set up section links
@@ -843,6 +888,19 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         loadSection(index);
       });
+      
+      // Add keyboard navigation support
+      link.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          loadSection(index);
+        }
+      });
+      
+      // Make links focusable
+      link.setAttribute('tabindex', '0');
+      link.setAttribute('role', 'button');
+      link.setAttribute('aria-label', `Play section: ${link.querySelector('.section-title').textContent}`);
     });
   }
   
@@ -855,22 +913,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const section = courseSections[index];
     currentSectionIndex = index;
     
-    // Update video player
+    // Update video player with new video URL
     const videoPlayer = document.getElementById('course-video-player');
+    
     if (videoPlayer && section.video) {
-      videoPlayer.src = section.video;
-    }
-    
-    // Update section title
-    const sectionTitle = document.getElementById('current-section-title');
-    if (sectionTitle) {
-      sectionTitle.textContent = section.title;
-    }
-    
-    // Update section description
-    const sectionDescription = document.getElementById('current-section-description');
-    if (sectionDescription && section.description) {
-      sectionDescription.textContent = section.description;
+      try {
+        // Update video source
+        videoPlayer.src = section.video;
+        
+        // Reset to beginning of new video
+        videoPlayer.currentTime = 0;
+        
+      } catch (error) {
+        console.error('Error loading video:', error);
+      }
     }
     
     // Update active section in sidebar
@@ -878,6 +934,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update URL hash
     updateURLHash(section.id);
+    
+    // Scroll to top of video container for better UX
+    const videoContainer = document.getElementById('course-video-container');
+    if (videoContainer) {
+      videoContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
   
 
@@ -889,6 +951,18 @@ document.addEventListener('DOMContentLoaded', function() {
       link.classList.remove('active');
       if (index === currentSectionIndex) {
         link.classList.add('active');
+        
+        // Update the section icon to show it's playing
+        const icon = link.querySelector('.section-icon');
+        if (icon) {
+          icon.className = 'fas fa-play-circle section-icon playing';
+        }
+      } else {
+        // Reset icon for non-active sections
+        const icon = link.querySelector('.section-icon');
+        if (icon) {
+          icon.className = 'fas fa-play-circle section-icon';
+        }
       }
     });
   }

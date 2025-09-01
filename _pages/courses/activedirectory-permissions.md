@@ -20,7 +20,7 @@ course_sections:
     video: "https://www.youtube.com/embed/s1mOHzQ_uLo?si=CrG_lo5ZbsA_6a9k"
   - id: "exploitation-methods"
     title: "Exploitation Methods"
-    video: "hhttps://www.youtube.com/embed/s1mOHzQ_uLo?si=CrG_lo5ZbsA_6a9k"
+    video: "https://www.youtube.com/embed/s1mOHzQ_uLo?si=CrG_lo5ZbsA_6a9k"
   - id: "defense-strategies"
     title: "Defense and Remediation Strategies"
     video: "https://www.youtube.com/embed/s1mOHzQ_uLo?si=CrG_lo5ZbsA_6a9k"
