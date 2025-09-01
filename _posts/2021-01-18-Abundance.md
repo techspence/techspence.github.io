@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: Abundance
 date: 2021-01-18
+author_profile: false
 ---
 Your success does not come at the expense of anyone else's success. 
 

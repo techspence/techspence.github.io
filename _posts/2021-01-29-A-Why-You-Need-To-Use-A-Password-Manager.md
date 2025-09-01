@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: Why You Need To Use a Password Manager
 date: 2021-01-29
+author_profile: false
 ---
 Passwords are like underwear. There's only a few pairs we like wearing and they all stink. In the next 93 seconds I'm going to explain why YOU need to use a password manager.
 

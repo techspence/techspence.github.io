@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: Finding Balance Amongst The Chaos
 date: 2021-01-26
+author_profile: false
 ---
 What do you need in your day-to-day life to maintain balance? What is balance? How do you know when you have achieved balance? Can you measure balance?
 

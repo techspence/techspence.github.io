@@ -3,6 +3,6 @@ layout: collection
 title: "Spencer's CVEs"
 collection: CVEs
 permalink: /CVEs/
-author_profile: true
+author_profile: false
 toc: true
 ---

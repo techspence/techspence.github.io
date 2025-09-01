@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: I Write Because
 date: 2021-01-14
+author_profile: false
 ---
 Why do I write? Why am I here? Why do I blog? All really great questions. Especially considering there is really not much content on my "blog." Many times I have sat in front of my computer screen in blank stare, wanting to write, but lacking the words. So, I am going to try something different. I'm going to use writing prompts to shake up my brain and get the creative juices going. To read my answers to the questions above, please continue onward!
 

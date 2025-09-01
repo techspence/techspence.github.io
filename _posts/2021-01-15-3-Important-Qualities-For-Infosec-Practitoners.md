@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: 3 Important Qualities for Infosec Practitioners
 date: 2021-01-15
+author_profile: false
 ---
 What qualities do you think are important for Information Security Practitioners? While I realize this kind of sounds like a cheesy interview question, I challange you to entertain the thought. What qualities, be it technical or emotional, are important for every Information Security Practitioner?
 

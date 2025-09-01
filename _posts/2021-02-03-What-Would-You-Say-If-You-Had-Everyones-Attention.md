@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: What Would You Say If You Had Everyone's Attention?
 date: 2021-02-03
+author_profile: false
 ---
 If you had the opportunity to stand in front of a group of people and you and only you could talk, what would you say?
 

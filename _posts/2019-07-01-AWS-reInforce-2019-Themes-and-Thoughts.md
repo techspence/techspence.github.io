@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "AWS re:Inforce 2019 - Themes and Thoughts"
 date: 2019-07-01
+author_profile: false
 tags:
   - AWS
   - Conferences

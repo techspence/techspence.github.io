@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "You May Never Believe This Infosec Style"
 date: 2021-02-11
+author_profile: false
 ---
 You may never believe this, infosec style..
 

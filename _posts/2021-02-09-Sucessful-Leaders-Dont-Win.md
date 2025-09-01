@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "Sucessful Leaders Don't Win"
 date: 2021-02-09
+author_profile: false
 ---
 > "The only meaningful measure for a leader is whether the team succeeds or fails.
 

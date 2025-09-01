@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: The Place I write
 date: 2021-01-21
+author_profile: false
 ---
 Every morning for the last 6 days, usually for 10-15 minutes between 8-9am, I write.
 

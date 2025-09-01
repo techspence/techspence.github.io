@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "Complexity Is The Enemy Of Security"
 date: 2021-02-16
+author_profile: false
 ---
 As a Security Practitioner, you win or lose by how you strategize, plan, design and build. To me that's some of the most enjoyable parts of security. Thinking of creative ways to solve problems. The issue becomes, sometimes the more creative we are, the more complexity we add. Complexity adds to confusion. Confusion leads to more problems and problems lead to incidents.
 

@@ -3,7 +3,7 @@ layout: collection
 title: "Totally Free Security Awareness Content"
 collection: securityawareness
 permalink: /securityawareness/
-author_profile: true
+author_profile: false
 ---
 
 Please feel free to copy, borrow or steal this content and use it for your own security program. Send these tips to your

@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "Using Powershell and Microsoft EWS Managed API to download attachments in Exchange 2016"
 date: 2019-03-08
+author_profile: false
 tags:
   - Powershell
   - Microsoft Exchange

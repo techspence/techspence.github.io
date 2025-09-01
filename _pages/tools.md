@@ -3,9 +3,10 @@ layout: single
 permalink: /tools/
 title: ""
 author_profile: false
+classes: ["tools-page"]
 ---
 
-# Tools I made...
+# Tools i've made...
 
 ## [ScriptSentry](https://github.com/techspence/scriptsentry)
 

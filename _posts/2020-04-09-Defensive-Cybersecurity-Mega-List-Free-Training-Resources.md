@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "Defensive Cybersecurity Mega List - FREE Training Resources"
 date: 2020-04-09
+author_profile: false
 tags:   
   - Blueteam
   - Training

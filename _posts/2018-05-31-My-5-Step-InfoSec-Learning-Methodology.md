@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "My 5 Step Infosec Learning Methodology"
 date: January 2019-01-29
+author_profile: false
 tags:
   - Training
   - Brain Dump

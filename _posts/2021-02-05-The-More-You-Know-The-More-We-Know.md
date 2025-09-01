@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: The More You Know The More We Know
 date: 2021-02-05
+author_profile: false
 ---
 A rising tide lifts all boats. Togethether everyone achieves more. 
 

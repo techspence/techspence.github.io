@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: A Cup of Coffee
 date: 2021-01-27
+author_profile: false
 ---
 _If we were having coffee right now.._
 

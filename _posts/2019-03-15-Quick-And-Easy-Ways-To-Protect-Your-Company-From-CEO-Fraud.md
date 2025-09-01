@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "Quick And Easy Ways to Protect Your Company From CEO Fraud"
 date: 2019-03-15
+author_profile: false
 tags:
   - CEO Fraud
   - Phishing

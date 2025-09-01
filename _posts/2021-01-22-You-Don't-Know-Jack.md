@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: You Don't Know Jack
 date: 2021-01-22
+author_profile: false
 ---
 When I was younger I thought I knew everything. How naive right? In a way though...I did know everything.
 

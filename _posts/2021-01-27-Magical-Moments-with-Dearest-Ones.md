@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: Magical Moments with Dearest Ones
 date: 2021-01-27
+author_profile: false
 ---
 This post is a reflection of an incredibly magical moment with my Father, Brother, and Brother in Law.
 

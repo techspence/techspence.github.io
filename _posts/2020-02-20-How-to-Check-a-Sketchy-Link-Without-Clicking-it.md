@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "How to Check a Sketchy Link Without Clicking It"
 date: 2020-02-20
+author_profile: false
 tags:
   - Phishing
 ---

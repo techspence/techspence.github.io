@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "Themes and Thoughts from the 2018 NYS Cybersecurity Conference"
 date: 2019-01-29
+author_profile: false
 tags:
   - Conferences
   - Brain Dump

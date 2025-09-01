@@ -2,7 +2,7 @@
 layout: single
 permalink: /content/
 title: "Spencer's Content Hub"
-author_profile: true
+author_profile: false
 ---
 
 - [Spencer's Free Newsletter - Ethical Threat Insights](https://go.spenceralessi.com/newsletter)

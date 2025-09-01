@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: Progress is Made by Doing Not by Pondering
 date: 2021-01-20
+author_profile: false
 ---
 > "Progress is made by doing, not by pondering."
 

@@ -3,6 +3,7 @@ layout: single
 classes: wide
 title: "Twenty Days of Consistent Writing"
 date: 2021-02-17
+author_profile: false
 ---
 What happens to your brain when you write every day? The results are pretty interesting, at least for me personally.
 
