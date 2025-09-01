@@ -10,14 +10,23 @@ course_category: "Category Name"
 course_instructor: "Instructor Name"
 course_updated: "Month Year"
 course_certificate: "Yes/No"
-course_video: "https://www.youtube.com/embed/VIDEO_ID"
+course_video: "https://www.youtube.com/embed/VIDEO_ID" # Main course overview video
 course_sections:
   - id: "section-1"
     title: "Section 1 Title"
+    video: "https://www.youtube.com/embed/VIDEO_ID_1"
+    duration: "5:30"
+    description: "Brief description of what this section covers"
   - id: "section-2"
     title: "Section 2 Title"
+    video: "https://www.youtube.com/embed/VIDEO_ID_2"
+    duration: "12:45"
+    description: "Brief description of what this section covers"
   - id: "section-3"
     title: "Section 3 Title"
+    video: "https://www.youtube.com/embed/VIDEO_ID_3"
+    duration: "8:20"
+    description: "Brief description of what this section covers"
 course_resources:
   - title: "Resource 1 Title"
     url: "https://example.com/resource1"
@@ -25,38 +34,3 @@ course_resources:
     url: "https://example.com/resource2"
 ---
 
-# Course Title
-
-Brief introduction to the course and what students will learn.
-
-## Section 1 Title
-
-Content for the first section goes here.
-
-### Subsection
-
-More detailed content with examples.
-
-## Section 2 Title
-
-Content for the second section.
-
-## Section 3 Title
-
-Content for the third section.
-
-## Course Conclusion
-
-Summary and next steps for students.
-
-### What You've Learned
-
-- Key point 1
-- Key point 2
-- Key point 3
-
-### Next Steps
-
-1. Practice the concepts learned
-2. Apply knowledge in real scenarios
-3. Continue learning with advanced topics 

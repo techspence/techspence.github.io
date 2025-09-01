@@ -28,7 +28,6 @@ layout: default
   <div class="course-wrapper">
     <div class="course-container">
 
-
       <!-- Left Column - Course Navigation -->
       <div class="course-left-column" id="course-navigation">
         <div class="course-navigation">
@@ -38,8 +37,20 @@ layout: default
               <ul>
                 {% for section in page.course_sections %}
                   <li>
-                    <a href="#{{ section.id }}" class="course-section-link">
-                      {{ section.title }}
+                    <a href="#{{ section.id }}" 
+                       class="course-section-link" 
+                       data-video="{{ section.video }}"
+                       data-section-id="{{ section.id }}"
+                       data-duration="{{ section.duration }}">
+                      <div class="section-info">
+                        <span class="section-title">{{ section.title }}</span>
+                        {% if section.duration %}
+                          <span class="section-duration">{{ section.duration }}</span>
+                        {% endif %}
+                      </div>
+                      <div class="section-status">
+                        <i class="fas fa-play-circle section-icon"></i>
+                      </div>
                     </a>
                   </li>
                 {% endfor %}
@@ -77,22 +88,22 @@ layout: default
             </header>
           {% endif %}
 
-          {% if page.course_video %}
-            <div class="course-video">
-              <div class="video-container">
-                <div class="video-wrapper">
-                  <iframe 
-                    src="{{ page.course_video }}" 
-                    title="Course Video" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                  </iframe>
-                </div>
+          <!-- Enhanced Video Container with Section Support -->
+          <div class="course-video" id="course-video-container">
+            <div class="video-container">
+              <div class="video-wrapper">
+                <iframe 
+                  id="course-video-player"
+                  src="{{ page.course_video }}" 
+                  title="Course Video" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen>
+                </iframe>
               </div>
             </div>
-          {% endif %}
+          </div>
 
           {% if page.course_resources %}
             <div class="course-resources-section">
@@ -127,7 +138,7 @@ layout: default
             <h4>Stay Updated</h4>
             <p>Get notified about new courses and cybersecurity tips.</p>
             <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-            <form action="https://app.kit.com/forms/8503267/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8503267" data-uid="eeec065436" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800"><div data-style="clean"><ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul><div data-element="fields" data-stacked="true" class="seva-fields formkit-fields"><div class="formkit-field"><input class="formkit-input" aria-label="First Name" name="fields[first_name]" required="" placeholder="First Name" type="text" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><input class="formkit-input" aria-label="Last Name" name="fields[last_name]" required="" placeholder="Last Name" type="text" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><div data-group="dropdown" class="formkit-9415" type="Custom" order="3" custom_field_key="region" custom_field_label="Region" save_as="Tag" group="field"><select class="formkit-select" data-element="tags-select" name="tags[]" required="" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"><option value="">Select your role</option><option value="10227349">CISO</option><option value="10227350">IT Director</option><option value="10227351">IT/Sysadmin</option><option value="10227355">Consultant</option><option value="10227356">Pentester</option><option value="10227357">Red Teamer</option><option value="10227366">CIO</option><option value="10227368">IT/Security Manager</option><option value="10227369">VP/Director of IT/Security</option><option value="10227382">Compliance/Risk/Infosec</option><option value="10227423">Other</option></select></div></div><button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(239, 232, 2); background-color: rgb(190, 8, 12); border-radius: 4px; font-weight: 700;"><div class="formkit-spinner"><div></div><div></div><div></div></div><span class="">Subscribe</span></button></div><div class="formkit-powered-by-convertkit-container"></div></div></form>
+            <form action="https://app.kit.com/forms/8503267/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8503267" data-uid="eeec065436" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800"><div data-style="clean"><ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul><div data-element="fields" data-stacked="true" class="seva-fields formkit-fields"><div class="formkit-field"><input class="formkit-input" aria-label="First Name" name="fields[first_name]" required="" placeholder="First Name" type="text" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><input class="formkit-field"><input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><div data-group="dropdown" class="formkit-9415" type="Custom" order="3" custom_field_key="region" custom_field_label="Region" save_as="Tag" group="field"><select class="formkit-select" data-element="tags-select" name="tags[]" required="" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"><option value="">Select your role</option><option value="10227349">CISO</option><option value="10227350">IT Director</option><option value="10227351">IT/Sysadmin</option><option value="10227355">Consultant</option><option value="10227356">Pentester</option><option value="10227357">Red Teamer</option><option value="10227366">CIO</option><option value="10227368">IT/Security Manager</option><option value="10227369">VP/Director of IT/Security</option><option value="10227382">Compliance/Risk/Infosec</option><option value="10227323">Other</option></select></div></div><button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(239, 232, 2); background-color: rgb(190, 8, 12); border-radius: 4px; font-weight: 700;"><div class="formkit-spinner"><div></div><div></div><div></div></div><span class="">Subscribe</span></span></button></div><div class="formkit-powered-by-convertkit-container"></div></div></form>
           </div>
         </div>
       </div>
@@ -155,6 +166,8 @@ layout: default
   --course-bg-primary: #ffffff;
   --course-bg-secondary: #f8f9fa;
   --course-border: #e9ecef;
+  --course-accent: #007bff;
+  --course-success: #28a745;
 }
 
 /* Course Page Header - Outside Content Area */
@@ -237,10 +250,6 @@ layout: default
   }
 }
 
-
-
-
-
 /* Left Column - Course Navigation */
 .course-left-column {
   order: 1;
@@ -262,6 +271,8 @@ layout: default
   font-weight: 600;
 }
 
+
+
 .course-toc ul {
   list-style: none;
   padding: 0;
@@ -273,18 +284,60 @@ layout: default
 }
 
 .course-section-link {
-  display: block;
-  padding: var(--course-spacing-xs) var(--course-spacing-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--course-spacing-sm);
   color: var(--course-text-secondary);
   text-decoration: none;
   border-radius: 6px;
   transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
 
 .course-section-link:hover {
   background: var(--course-bg-secondary);
   color: var(--course-text-muted);
+  border-color: var(--course-accent);
 }
+
+.course-section-link.active {
+  background: var(--course-accent);
+  color: white;
+  border-color: var(--course-accent);
+}
+
+
+
+.section-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.section-title {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.section-duration {
+  font-size: 0.75rem;
+  color: var(--course-text-muted);
+  opacity: 0.8;
+}
+
+.section-status {
+  display: flex;
+  align-items: center;
+  gap: var(--course-spacing-xs);
+}
+
+.section-icon {
+  color: var(--course-accent);
+  font-size: 1.1rem;
+}
+
+
 
 /* Main Content Area */
 .course-content {
@@ -335,14 +388,32 @@ layout: default
 }
 
 .meta-item i {
-  color: #007bff;
+  color: var(--course-accent);
 }
 
-/* Video Container - Mobile First */
+/* Enhanced Video Container */
 .course-video {
   margin: var(--course-spacing-lg) 0;
   margin-top: -1rem;
 }
+
+.video-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--course-spacing-md);
+  padding: var(--course-spacing-sm) 0;
+  border-bottom: 1px solid var(--course-border);
+}
+
+.video-header h3 {
+  margin: 0;
+  color: var(--course-text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
 
 .video-container {
   position: relative;
@@ -362,7 +433,7 @@ layout: default
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   background: var(--course-bg-secondary);
 }
 
@@ -376,7 +447,21 @@ layout: default
   border-radius: var(--course-border-radius);
 }
 
-/* Modern browser support with aspect-ratio (fallback for older browsers) */
+.video-info {
+  margin-top: var(--course-spacing-md);
+  padding: var(--course-spacing-sm);
+  background: var(--course-bg-secondary);
+  border-radius: var(--course-border-radius);
+  border: 1px solid var(--course-border);
+}
+
+.current-section-info {
+  font-size: 0.9rem;
+  color: var(--course-text-muted);
+  line-height: 1.4;
+}
+
+/* Modern browser support with aspect-ratio */
 @supports (aspect-ratio: 16 / 9) {
   .video-wrapper {
     aspect-ratio: 16 / 9;
@@ -394,6 +479,12 @@ layout: default
   
   .video-wrapper iframe {
     border-radius: 0;
+  }
+  
+  .video-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--course-spacing-sm);
   }
 }
 
@@ -432,7 +523,7 @@ layout: default
 }
 
 .resource-item a {
-  color: #007bff;
+  color: var(--course-accent);
   text-decoration: underline;
   display: block;
   padding: var(--course-spacing-xs) 0;
@@ -728,8 +819,113 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Course navigation is now always visible - no toggle needed
+  // Course state management
+  let currentSectionIndex = 0;
+  let courseSections = [];
+  
+  
+  // Initialize course functionality
+  function initializeCourse() {
+    if (courseSections.length === 0) return;
+    
+    // Set up section links
+    setupSectionLinks();
+    
+    // Load initial section
+    loadSection(0);
+  }
+  
+  // Set up section link click handlers
+  function setupSectionLinks() {
+    const sectionLinks = document.querySelectorAll('.course-section-link');
+    sectionLinks.forEach((link, index) => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        loadSection(index);
+      });
+    });
+  }
+  
 
+  
+  // Load a specific section
+  function loadSection(index) {
+    if (index < 0 || index >= courseSections.length) return;
+    
+    const section = courseSections[index];
+    currentSectionIndex = index;
+    
+    // Update video player
+    const videoPlayer = document.getElementById('course-video-player');
+    if (videoPlayer && section.video) {
+      videoPlayer.src = section.video;
+    }
+    
+    // Update section title
+    const sectionTitle = document.getElementById('current-section-title');
+    if (sectionTitle) {
+      sectionTitle.textContent = section.title;
+    }
+    
+    // Update section description
+    const sectionDescription = document.getElementById('current-section-description');
+    if (sectionDescription && section.description) {
+      sectionDescription.textContent = section.description;
+    }
+    
+    // Update active section in sidebar
+    updateActiveSection();
+    
+    // Update URL hash
+    updateURLHash(section.id);
+  }
+  
+
+  
+  // Update active section in sidebar
+  function updateActiveSection() {
+    const sectionLinks = document.querySelectorAll('.course-section-link');
+    sectionLinks.forEach((link, index) => {
+      link.classList.remove('active');
+      if (index === currentSectionIndex) {
+        link.classList.add('active');
+      }
+    });
+  }
+  
+
+  
+  // Update URL hash
+  function updateURLHash(sectionId) {
+    if (history.pushState) {
+      history.pushState(null, null, `#${sectionId}`);
+    } else {
+      location.hash = `#${sectionId}`;
+    }
+  }
+  
+  // Handle URL hash changes
+  function handleHashChange() {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const sectionIndex = courseSections.findIndex(section => section.id === hash);
+      if (sectionIndex !== -1) {
+        loadSection(sectionIndex);
+      }
+    }
+  }
+  
+  // Listen for hash changes
+  window.addEventListener('hashchange', handleHashChange);
+  
+  // Check for initial hash
+  if (window.location.hash) {
+    handleHashChange();
+  }
+  
+  // Initialize course
+  initializeCourse();
+  
   // Newsletter form submission
   const newsletterForm = document.querySelector('.newsletter-form');
   if (newsletterForm) {
@@ -743,46 +939,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Smooth scrolling for course section links
-  const sectionLinks = document.querySelectorAll('.course-section-link');
-  sectionLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      
-      if (targetElement) {
-        // Close mobile navigation if open
-        if (mobileNavBtn && mobileNavBtn.classList.contains('active')) {
-          mobileNavBtn.classList.remove('active');
-          courseLeftColumn.classList.remove('active');
-          const navText = mobileNavBtn.querySelector('.nav-text');
-          navText.textContent = 'Course Contents';
-        }
-        
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-
-  // Close mobile navigation when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!mobileNavBtn?.contains(e.target) && !courseLeftColumn?.contains(e.target)) {
-      if (mobileNavBtn && courseLeftColumn) {
-        mobileNavBtn.classList.remove('active');
-        courseLeftColumn.classList.remove('active');
-        const navText = mobileNavBtn.querySelector('.nav-text');
-        navText.textContent = 'Course Contents';
-      }
-    }
-  });
-
-  // Handle window resize - consolidated with the new responsive handler above
-  
   // Video container responsive handling
   const videoContainer = document.querySelector('.video-container');
   if (videoContainer) {
