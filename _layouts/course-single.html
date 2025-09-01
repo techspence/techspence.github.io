@@ -34,16 +34,6 @@ layout: default
               </ul>
             {% endif %}
           </nav>
-          
-          {% if page.course_progress %}
-            <div class="course-progress">
-              <h4>Your Progress</h4>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: {{ page.course_progress }}%"></div>
-              </div>
-              <span class="progress-text">{{ page.course_progress }}% Complete</span>
-            </div>
-          {% endif %}
         </div>
       </div>
 
@@ -97,25 +87,22 @@ layout: default
             </div>
           {% endif %}
 
+          {% if page.course_resources %}
+            <div class="course-resources-section">
+              <h3>Additional Resources</h3>
+              <div class="resources-list">
+                {% for resource in page.course_resources %}
+                  <div class="resource-item">
+                    <a href="{{ resource.url }}" target="_blank" rel="noopener">{{ resource.title }}</a>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
           <div class="course-body">
             {{ content }}
           </div>
-
-          {% if page.course_resources %}
-            <div class="course-resources">
-              <h3>Additional Resources</h3>
-              <ul>
-                {% for resource in page.course_resources %}
-                  <li>
-                    <a href="{{ resource.url }}" target="_blank" rel="noopener">
-                      <i class="fas fa-external-link-alt"></i>
-                      {{ resource.title }}
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
         </article>
       </div>
 
@@ -128,36 +115,12 @@ layout: default
               Enroll in Course
             </a>
           {% endif %}
-          
-          <div class="course-info-card">
-            <h4>Course Information</h4>
-            {% if page.course_instructor %}
-              <div class="info-item">
-                <strong>Instructor:</strong>
-                <span>{{ page.course_instructor }}</span>
-              </div>
-            {% endif %}
-            {% if page.course_updated %}
-              <div class="info-item">
-                <strong>Last Updated:</strong>
-                <span>{{ page.course_updated }}</span>
-              </div>
-            {% endif %}
-            {% if page.course_certificate %}
-              <div class="info-item">
-                <strong>Certificate:</strong>
-                <span>{{ page.course_certificate }}</span>
-              </div>
-            {% endif %}
-          </div>
 
           <div class="course-newsletter">
             <h4>Stay Updated</h4>
             <p>Get notified about new courses and cybersecurity tips.</p>
-            <form class="newsletter-form">
-              <input type="email" placeholder="Your email address" required>
-              <button type="submit" class="btn btn--small">Subscribe</button>
-            </form>
+            <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+            <form action="https://app.kit.com/forms/8503267/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8503267" data-uid="eeec065436" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800"><div data-style="clean"><ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul><div data-element="fields" data-stacked="true" class="seva-fields formkit-fields"><div class="formkit-field"><input class="formkit-input" aria-label="First Name" name="fields[first_name]" required="" placeholder="First Name" type="text" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><input class="formkit-input" aria-label="Last Name" name="fields[last_name]" required="" placeholder="Last Name" type="text" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><div data-group="dropdown" class="formkit-9415" type="Custom" order="3" custom_field_key="region" custom_field_label="Region" save_as="Tag" group="field"><select class="formkit-select" data-element="tags-select" name="tags[]" required="" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"><option value="">Select your role</option><option value="10227349">CISO</option><option value="10227350">IT Director</option><option value="10227351">IT/Sysadmin</option><option value="10227355">Consultant</option><option value="10227356">Pentester</option><option value="10227357">Red Teamer</option><option value="10227366">CIO</option><option value="10227368">IT/Security Manager</option><option value="10227369">VP/Director of IT/Security</option><option value="10227382">Compliance/Risk/Infosec</option><option value="10227423">Other</option></select></div></div><button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(239, 232, 2); background-color: rgb(190, 8, 12); border-radius: 4px; font-weight: 700;"><div class="formkit-spinner"><div></div><div></div><div></div></div><span class="">Subscribe</span></button></div><div class="formkit-powered-by-convertkit-container"></div></div></form>
           </div>
         </div>
       </div>
@@ -292,14 +255,14 @@ layout: default
 .course-title {
   margin: 0 0 0.5rem 0;
   color: #2c3e50;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .course-subtitle {
   margin: 0 0 1.5rem 0;
   color: #6c757d;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -322,43 +285,62 @@ layout: default
   color: #007bff;
 }
 
-.course-video {
-  margin-bottom: 2rem;
+/* Main Content Styles */
+.courses-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  max-width: 800px; /* Limit maximum width */
+  margin: -1rem auto; /* Center the video */
   border-radius: 8px;
   overflow: hidden;
+  padding-bottom: 45%; /* Reduced from 56.25% to crop top/bottom */
+  margin-bottom: 2rem; /* Add bottom margin to prevent overlap */
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   border: none;
+  border-radius: 8px;
+  width: 95%;
+  height: 54%; /* Increase height to compensate for the crop */
+}
+
+/* Ensure proper spacing between video and resources on smaller screens */
+@media (max-width: 992px) {
+  .video-container {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    margin-bottom: 1rem;
+  }
 }
 
 .course-body {
-  line-height: 1.7;
+  line-height: 1.6;
   color: #2c3e50;
+  font-size: 16px;
 }
 
 .course-body h2 {
   color: #2c3e50;
   margin: 2rem 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 .course-body h3 {
   color: #495057;
   margin: 1.5rem 0 0.75rem 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -366,44 +348,173 @@ layout: default
   margin-bottom: 1rem;
 }
 
-.course-resources {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e9ecef;
+.course-resources-section {
+  margin-top: -35rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  position: relative;
+  z-index: 10;
 }
 
-.course-resources h3 {
+.course-resources-section h3 {
   margin: 0 0 1rem 0;
   color: #2c3e50;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
-.course-resources ul {
-  list-style: none;
+.resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resource-item {
   padding: 0;
   margin: 0;
 }
 
-.course-resources li {
-  margin-bottom: 0.75rem;
-}
-
-.course-resources a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.resource-item a {
   color: #007bff;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  text-decoration: underline;
+  display: block;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-size: 0.95rem;
 }
 
-.course-resources a:hover {
-  background: #f8f9fa;
+.resource-item a:hover {
   color: #0056b3;
 }
+
+/* Enhanced responsive design for different screen sizes */
+@media (max-width: 1600px) {
+  .course-resources-section {
+    margin-top: -30rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .course-resources-section {
+    margin-top: -25rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .course-resources-section {
+    margin-top: -20rem;
+    padding: 1.5rem;
+  }
+  
+  .course-resources-section h3 {
+    font-size: 1rem;
+  }
+  
+  .resource-item a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .course-resources-section {
+    margin-top: -15rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .course-resources-section {
+    margin-top: -5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-resources-section {
+    margin-top: -3rem;
+    padding: 1.25rem;
+  }
+  
+  .resources-list {
+    gap: 0.25rem;
+  }
+  
+  .resource-item a {
+    padding: 0.2rem 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-resources-section {
+    margin-top: -2rem;
+    padding: 1rem;
+  }
+  
+  .course-resources-section h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .resource-item a {
+    font-size: 0.8rem;
+    padding: 0.15rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-resources-section {
+    margin-top: -1rem;
+    padding: 0.75rem;
+  }
+  
+  .course-resources-section h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .resource-item a {
+    font-size: 0.8rem;
+    padding: 0.15rem 0;
+  }
+}
+
+/* Additional safeguards for very small screens */
+@media (max-width: 360px) {
+  .course-resources-section {
+    margin-top: -0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .course-resources-section h3 {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resource-item a {
+    font-size: 0.75rem;
+    padding: 0.1rem 0;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .course-resources-section {
+    margin-top: -2rem;
+    padding: 1rem;
+  }
+  
+  .video-container {
+    margin-bottom: 1rem;
+  }
+}
+
+
 
 /* Right Sidebar */
 .course-sidebar {
@@ -477,6 +588,59 @@ layout: default
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Make the ConvertKit form fit within the sidebar */
+.course-newsletter .seva-form {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.course-newsletter .formkit-fields {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+}
+
+.course-newsletter .formkit-field {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.course-newsletter .formkit-input,
+.course-newsletter .formkit-select {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  font-size: 0.85rem !important;
+  padding: 0.5rem !important;
+}
+
+.course-newsletter .formkit-submit {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: 0.5rem !important;
+  padding: 0.75rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* Override ConvertKit's default form styling */
+.course-newsletter .formkit-alert {
+  font-size: 0.8rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.course-newsletter .formkit-powered-by-convertkit-container {
+  margin-top: 0.5rem !important;
+  font-size: 0.7rem !important;
+}
+
+
+
+/* Ensure form elements don't overflow */
+.course-newsletter * {
+  box-sizing: border-box !important;
 }
 
 .course-newsletter h4 {
@@ -546,7 +710,23 @@ layout: default
   }
   
   .course-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .course-body {
+    font-size: 15px;
+  }
+  
+  /* Adjust form sizing for smaller sidebar */
+  .course-newsletter .formkit-input,
+  .course-newsletter .formkit-select {
+    font-size: 0.8rem !important;
+    padding: 0.4rem !important;
+  }
+  
+  .course-newsletter .formkit-submit {
+    font-size: 0.85rem !important;
+    padding: 0.6rem !important;
   }
 }
 
@@ -584,7 +764,12 @@ layout: default
   }
   
   .course-title {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+  }
+  
+  .course-body {
+    font-size: 14px;
+    line-height: 1.5;
   }
   
   .course-meta {
