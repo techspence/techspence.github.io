@@ -14,6 +14,16 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<!-- Course Title and Subtitle - Outside Content Area -->
+<div class="course-page-header">
+  <div class="course-page-header-container">
+    <h1 class="course-page-title">{{ page.title }}</h1>
+    {% if page.course_subtitle %}
+      <p class="course-page-subtitle">{{ page.course_subtitle }}</p>
+    {% endif %}
+  </div>
+</div>
+
 <div id="main" role="main">
   <div class="course-wrapper">
     <div class="course-container">
@@ -42,13 +52,8 @@ layout: default
       <!-- Main Content Area -->
       <div class="course-content">
         <article class="course-article">
-          <header class="course-header">
-            <h1 class="course-title">{{ page.title }}</h1>
-            {% if page.course_subtitle %}
-              <p class="course-subtitle">{{ page.course_subtitle }}</p>
-            {% endif %}
-            
-            {% if page.course_meta %}
+          {% if page.course_meta %}
+            <header class="course-header">
               <div class="course-meta">
                 {% if page.course_duration %}
                   <span class="meta-item">
@@ -69,8 +74,8 @@ layout: default
                   </span>
                 {% endif %}
               </div>
-            {% endif %}
-          </header>
+            </header>
+          {% endif %}
 
           {% if page.course_video %}
             <div class="course-video">
@@ -152,6 +157,39 @@ layout: default
   --course-border: #e9ecef;
 }
 
+/* Course Page Header - Outside Content Area */
+.course-page-header {
+  background: linear-gradient(135deg, var(--course-bg-primary) 0%, var(--course-bg-secondary) 100%);
+  border-bottom: 1px solid var(--course-border);
+  padding: var(--course-spacing-xl) 0;
+  margin-bottom: var(--course-spacing-xl);
+}
+
+.course-page-header-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 var(--course-spacing-md);
+  text-align: center;
+}
+
+.course-page-title {
+  margin: 0 0 var(--course-spacing-sm) 0;
+  color: var(--course-text-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.course-page-subtitle {
+  margin: 0;
+  color: var(--course-text-secondary);
+  font-size: 0.625rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #main {
   margin: 0;
   padding: 0;
@@ -179,6 +217,24 @@ layout: default
   min-height: calc(100vh - 200px);
   width: 100%;
   box-sizing: border-box;
+}
+
+/* Mobile-specific course page header adjustments */
+@media (max-width: 767px) {
+  .course-page-header {
+    padding: var(--course-spacing-lg) 0;
+    margin-bottom: var(--course-spacing-lg);
+  }
+  
+  .course-page-title {
+    font-size: 1rem;
+    padding: 0 var(--course-spacing-sm);
+  }
+  
+  .course-page-subtitle {
+    font-size: 0.55rem;
+    padding: 0 var(--course-spacing-sm);
+  }
 }
 
 
@@ -285,6 +341,7 @@ layout: default
 /* Video Container - Mobile First */
 .course-video {
   margin: var(--course-spacing-lg) 0;
+  margin-top: -1rem;
 }
 
 .video-container {
@@ -503,6 +560,18 @@ layout: default
     gap: var(--course-spacing-xl);
   }
   
+  .course-page-header-container {
+    padding: 0 var(--course-spacing-lg);
+  }
+  
+  .course-page-title {
+    font-size: 1.5rem;
+  }
+  
+  .course-page-subtitle {
+    font-size: 0.75rem;
+  }
+  
   .course-title {
     font-size: 2rem;
   }
@@ -536,6 +605,10 @@ layout: default
     grid-template-columns: 280px 1fr 320px;
     gap: var(--course-spacing-xl);
     padding: var(--course-spacing-xl);
+  }
+  
+  .course-page-header-container {
+    padding: 0 var(--course-spacing-xl);
   }
   
   .course-left-column {
@@ -576,12 +649,24 @@ layout: default
     padding: var(--course-spacing-xxl);
   }
   
+  .course-page-header-container {
+    padding: 0 var(--course-spacing-xxl);
+  }
+  
   .course-article {
     padding: var(--course-spacing-xxl);
   }
   
   .course-title {
     font-size: 2.5rem;
+  }
+  
+  .course-page-title {
+    font-size: 1.75rem;
+  }
+  
+  .course-page-subtitle {
+    font-size: 0.875rem;
   }
 }
 
