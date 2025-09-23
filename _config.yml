@@ -118,6 +118,9 @@ author:
     - label: "A newsletter for pentesters"
       icon: "fas fa-fw fa-link"
       url: "https://go.spenceralessi.com/links-website"
+    - label: "A new kind of internal pentest"
+      icon: "fas fa-fw fa-link"
+      url: "https://go.spenceralessi.com/ipt-website"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/techspence"
@@ -155,6 +158,9 @@ footer:
     - label: "A newsletter for pentesters"
       icon: "fas fa-fw fa-link"
       url: "https://go.spenceralessi.com/links-website"
+    - label: "A new kind of internal pentest"
+      icon: "fas fa-fw fa-link"
+      url: "https://go.spenceralessi.com/ipt-website"
 
 
 # Reading Files
